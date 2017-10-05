@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#22ffffff"
+    android:layout_margin="20dp">
+
+    <!--=====================================================================================
+                           CLOCK LAYOUT
+    -=====================================================================================-->
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="32dp"
+        android:weightSum="1">
+
+        <TextClock
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/Clock"
+            style="@style/Base.TextAppearance.AppCompat.Medium"
+            android:contentDescription="@string/clock" />
+    </LinearLayout>
+
+    <!--=====================================================================================
+                     TOP LAYOUT
+    =====================================================================================-->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="204dp"
+        android:id="@+id/Top">
+
+        <RelativeLayout
+            android:layout_width="162dp"
+            android:layout_height="fill_parent"
+            android:id="@+id/TopLeft">
+
+            <TextView
+                android:text="@string/temperature"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:textSize="24sp"
+                android:id="@+id/Temperature_title"
+                android:layout_gravity="center_horizontal"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/termometer"
+                android:src="@drawable/termometer"
+                android:scaleType="fitXY"
+                android:contentDescription="@string/temp"
+                android:layout_gravity="left"
+                android:layout_centerVertical="true"
+                android:layout_centerHorizontal="true" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="24sp"
+                android:id="@+id/Tvalue"
+                android:text="@string/Tvalue"
+                android:layout_gravity="right"
+                android:layout_below="@+id/termometer"
+                android:layout_centerHorizontal="true" />
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/Temperature_title"
+                android:layout_centerHorizontal="true"></LinearLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/TopRight">
+
+            <TextView
+                android:text="@string/humidity"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="24sp"
+                android:id="@+id/Humidity_title"
+                android:layout_alignParentTop="true"
+                android:layout_alignStart="@+id/Hygrometer"
+                android:layout_gravity="center" />
+
+            <ImageView
+                android:layout_width="86dp"
+                android:layout_height="116dp"
+                android:id="@+id/Hygrometer"
+                android:src="@drawable/humidity"
+                android:contentDescription="@string/humi"
+                android:focusable="false"
+                android:layout_marginLeft="0dp"
+                android:layout_centerVertical="true"
+                android:layout_centerHorizontal="true" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="24sp"
+                android:id="@+id/Hvalue"
+                android:text="@string/Hvalue"
+                android:layout_gravity="right"
+                android:layout_below="@+id/Hygrometer"
+                android:layout_centerHorizontal="true" />
+
+        </RelativeLayout>
+    </LinearLayout>
+
+    <!--=====================================================================================
+                                    BOTTOM LAYOUT
+    -=====================================================================================-->
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="186dp"
+        android:id="@+id/Bottom">
+
+        <RelativeLayout
+            android:layout_width="145dp"
+            android:layout_height="202dp"
+            android:id="@+id/BottomLeft">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="186dp">
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/switch_led_button"
+                android:textSize="22sp"
+                android:text="switch led"
+                android:onClick="onSwitchLedClick"
+                android:layout_gravity="center_horizontal" />
+
+
+            <TextView
+                android:id="@+id/textLedState"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="LED OFF"
+                android:textColor="#0000ff"
+                android:layout_gravity="center_horizontal"
+                android:textAppearance="?android:attr/textAppearanceLarge" />
+
+
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="145dp"
+            android:layout_height="202dp"
+            android:id="@+id/BottomRight">
+
+
+
+
+
+<!--
+            <ToggleButton
+                android:id="@+id/buttonLed"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:background="@drawable/led_button"
+                android:textColor="#FFFFFF"
+                android:textSize="30sp" />
+-->
+
+        </RelativeLayout>
+
+
+
+
+
+
+
+    </LinearLayout>
+
+    <!--=====================================================================================
+                           BUTTON CONNECT
+    ======================================================================================-->
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/connect"
+        android:id="@+id/connect_button"
+        android:textSize="32sp"
+        android:onClick="onConnectClick"
+        android:layout_gravity="center_horizontal" />
+
+</LinearLayout>
