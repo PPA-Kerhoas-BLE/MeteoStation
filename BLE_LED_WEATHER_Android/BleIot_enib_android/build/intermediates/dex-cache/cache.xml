@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="true"
+        jar="/Users/FaveroPereira/Desktop/BLE_LED_WEATHER/BleIot_enib_android/app/build/intermediates/incremental-runtime-classes/debug/instant-run.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="3be78ebc2706b2e1fe2f12d5726887a92d6c183b">
+        <dex dex="/Users/FaveroPereira/Desktop/BLE_LED_WEATHER/BleIot_enib_android/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run_bc68ea793a2ba85b037c7e656cf0aa2432e7da7e/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/FaveroPereira/.android/build-cache/db035b350ca1800d63c3714c84e9750cb8e7bb61/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="4e86306289ace4aa0cfec44a05ed2b410d36989d">
+        <dex dex="/Users/FaveroPereira/Desktop/BLE_LED_WEATHER/BleIot_enib_android/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_bcca18cce4d41981ef62a4e2d7b5b878c754f3d0/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/FaveroPereira/Desktop/BLE_LED_WEATHER/BleIot_enib_android/app/build/intermediates/incremental-classes/debug/instant-run-bootstrap.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="aa81326a58f9fb93dee71f3964c9be37c7543991">
+        <dex dex="/Users/FaveroPereira/Desktop/BLE_LED_WEATHER/BleIot_enib_android/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run-bootstrap_4accad03265f1dd6b2e2a043ff5c6345a90ff731/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/FaveroPereira/.android/build-cache/1487130cb1f7c298038031323f65e0e6a2ec5913/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="d84409890828e07d344a3b9b1da545dba9897b51">
+        <dex dex="/Users/FaveroPereira/Desktop/BLE_LED_WEATHER/BleIot_enib_android/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_d6d47fd766b85603d8b86a84c5349d477bff87bb/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/FaveroPereira/Library/Android/sdk/extras/android/m2repository/com/android/support/support-annotations/22.0.0/support-annotations-22.0.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="685d0b2c590447e85284ed84712cb363ba04eff8">
+        <dex dex="/Users/FaveroPereira/Desktop/BLE_LED_WEATHER/BleIot_enib_android/app/build/intermediates/transforms/dex/debug/folders/1000/10/support-annotations-22.0.0_d093173ddd7e8244d7558f674043f45ee95d0743/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/FaveroPereira/.android/build-cache/db035b350ca1800d63c3714c84e9750cb8e7bb61/output/jars/libs/internal_impl-22.0.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="b5b92f469d515a13d778900f6d50c03d12f35504">
+        <dex dex="/Users/FaveroPereira/Desktop/BLE_LED_WEATHER/BleIot_enib_android/app/build/intermediates/transforms/dex/debug/folders/1000/10/internal_impl-22.0.0_6629eb54e2952d8d48c12880053d2b337d73a702/classes.dex" />
+    </item>
+
+</items>
