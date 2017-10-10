@@ -1,0 +1,6 @@
+16:02:43 **** Incremental Build of configuration Default for project stm32f411_base ****
+make all 
+make: Nothing to be done for 'all'.
+
+16:02:43 Build Finished (took 70ms)
+
