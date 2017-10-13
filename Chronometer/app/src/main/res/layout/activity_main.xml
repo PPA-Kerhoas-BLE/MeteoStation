@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="ppe.enib.fr.chronometer.MainActivity"
+    android:background="@drawable/backgroudn">
+
+    <Chronometer
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/chrono"
+        android:textColor="#4169E1"
+        android:textSize="@dimen/Chronometer_size"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:text="@string/Start_chronometer" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Start"
+        android:id="@+id/StartId"
+        android:layout_below="@+id/chrono"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft=" 50dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="75dp"
+        android:background="#a2d1d4"
+        android:textStyle="bold"
+        android:textColor="#0da30a" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Reset"
+        android:id="@+id/restartId"
+        android:background="#a2d1d4"
+        android:layout_alignTop="@+id/StartId"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="45dp"
+        android:layout_marginEnd="45dp"
+        android:textColor="#c20808"
+        android:textStyle="bold" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Save Time"
+        android:id="@+id/saveId"
+        android:layout_below="@+id/StartId"
+        android:background="#a2d1d4"
+        android:layout_alignLeft="@+id/StartId"
+        android:layout_alignStart="@+id/StartId"
+        android:layout_marginTop="58dp"
+        android:textColor="@color/abc_primary_text_material_light"
+        android:textStyle="bold" />
+
+</RelativeLayout>
