@@ -4,24 +4,34 @@ import android.net.Uri;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.Chronometer;
 import android.os.SystemClock;
+import android.widget.ListView;
+import android.widget.TextView;
 
 
 import com.google.android.gms.appindexing.Action;
 import com.google.android.gms.appindexing.AppIndex;
 import com.google.android.gms.common.api.GoogleApiClient;
 
+import java.util.ArrayList;
+import java.util.List;
+import java.util.logging.Handler;
+import java.util.logging.LogRecord;
+
 
 public class MainActivity extends AppCompatActivity {
     private Button startButton;
-    private Button saveButton;
+    private Button lapButton;
     private Button restartButton;
-
     private Chronometer chronometer;
-    /**
-     * ATTENTION: This was auto-generated to implement the App Indexing API.
+    private boolean isRunning;
+    private long stopTime;
+    private long pauseDuration;
+
+     /* ATTENTION: This was auto-generated to implement the App Indexing API.
      * See https://g.co/AppIndexing/AndroidStudio for more information.
      */
     private GoogleApiClient client;
@@ -33,30 +43,50 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         //Method to find a element in a view
         //This method returns a view and because that its necessary make the cast of a Button
-        startButton = (Button) findViewById(R.id.StartId);
-        saveButton = (Button) findViewById(R.id.saveId);
+        startButton = (Button) findViewById(R.id.button);
+        lapButton = (Button) findViewById(R.id.lapId);
         restartButton = (Button) findViewById(R.id.restartId);
-
         chronometer = (Chronometer) findViewById(R.id.chrono);
+        isRunning = false;
 
+
+
+        //chronometer.setFormat(" Time\n(%s)");
+        /*O valor apresentado pelo cronometro é calculado pela diferença entre o instante
+        actual(SystemClock.elapsedRealtime()) e o valor de referência - aquele que foi "setado"
+        através de setBase().
+        É por isso que quando volta a chamar start() o cronometro se comporta como não tivesse sido parado.
+
+        Para obter o efeito que pretende tem de ajustar o valor de referência de forma a que a
+        diferença entre o instante actual e ele seja igual ao valor apresentado pelo cronometro
+        na altura em que foi parado.*/
         startButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                chronometer.setBase(SystemClock.elapsedRealtime());
-                if(startButton.getText().equals("Start")){
-                    chronometer.start();
-                    startButton.setText("Stop");
-                }else if(startButton.getText().equals("Stop")){
-                    chronometer.stop();
-                    startButton.setText("Start");
-                }
 
             }
         });
-
-        saveButton.setOnClickListener(new View.OnClickListener() {
+        startButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+
+                if(startButton.getText().equals("Start")){
+                    if(!isRunning){
+                        chronometer.setBase(SystemClock.elapsedRealtime());
+                        chronometer.start();
+                        isRunning = true;
+                        startButton.setText("Stop");
+                    }else{
+                        pauseDuration = SystemClock.elapsedRealtime() - stopTime;
+                        chronometer.setBase(chronometer.getBase() + pauseDuration);
+                        chronometer.start();
+                        startButton.setText("Stop");
+                    }
+                }else if(startButton.getText().equals("Stop")){
+                    chronometer.stop();
+                    stopTime = SystemClock.elapsedRealtime();
+                    startButton.setText("Start");
+                }
 
             }
         });
@@ -65,11 +95,14 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 chronometer.setBase(SystemClock.elapsedRealtime());
-               if(startButton.getText().equals("Stop")){
+                isRunning = false;
+                if(startButton.getText().equals("Stop")){
                     startButton.setText("Start");
                 }
+
             }
         });
+
 
         // ATTENTION: This was auto-generated to implement the App Indexing API.
         // See https://g.co/AppIndexing/AndroidStudio for more information.
