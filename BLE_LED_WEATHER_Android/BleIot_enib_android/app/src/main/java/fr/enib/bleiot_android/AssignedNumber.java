@@ -159,7 +159,7 @@ public class AssignedNumber {
         //+++++++++++++++++++USER DEFINED CHAR++++++++++++++++++
         sAssignedNumbers.put(0xFF12, "switch led");
         sAssignedNumbers.put(0xFF11, "led state");
-
+//TODO
         // GATT
         // https://www.bluetooth.org/en-us/specification/assigned-numbers/generic-attribute-profile
         sAssignedNumbers.put(0x1800, "Generic Access Profile");

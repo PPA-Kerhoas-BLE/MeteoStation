@@ -225,6 +225,9 @@ public class BleIotActivity extends Activity {
                         humidityTxt.setText(R.string.Hvalue);
                         TextView temperatureTxt = (TextView)BleIotActivity.this.findViewById(R.id.Tvalue);
                         temperatureTxt.setText(R.string.Tvalue);
+                        //TODO
+                        TextView pressureTxt = (TextView)BleIotActivity.this.findViewById(R.id.pressureId);
+                        pressureTxt.setText(R.string.Pvalue);
                     }
                 });
                 break;
@@ -319,6 +322,16 @@ public class BleIotActivity extends Activity {
                         writeGattDescriptor(descriptor);
                         Log.i(TAG, "Humidity characteristic subscription done");
                     }
+//TODO
+                    if (gattCharacteristic.getUuid().equals(AssignedNumber.getBleUuid("Pressure"))) {
+
+                        mGatt.setCharacteristicNotification(gattCharacteristic, true);// Enable notifications.
+
+                        BluetoothGattDescriptor descriptor = gattCharacteristic.getDescriptor(AssignedNumber.getBleUuid("Client Characteristic Configuration"));
+                        descriptor.setValue( BluetoothGattDescriptor.ENABLE_NOTIFICATION_VALUE );
+                        writeGattDescriptor(descriptor);
+                        Log.i(TAG, "Pressure characteristic subscription done");
+                    }
 
                     if (gattCharacteristic.getUuid().equals(AssignedNumber.getBleUuid("switch led"))) {
 
@@ -369,6 +382,20 @@ public class BleIotActivity extends Activity {
                     }
                 });
                 Log.d(TAG, String.format("Update humidity: %.2f%%", humidity));
+            }
+//TODO
+            if (characteristic.getUuid().equals(AssignedNumber.getBleUuid("Pressure"))) {
+                Log.i(TAG, "Pressure has changed");
+
+                float pressure100 = characteristic.getIntValue(BluetoothGattCharacteristic.FORMAT_UINT16,0).floatValue();
+                final float pressure = pressure100 / 1000.0f;  // 2 decimals
+                runOnUiThread(new Runnable() {
+                    public void run() {
+                        TextView pressureTxt = (TextView) BleIotActivity.this.findViewById(R.id.pressureId);
+                       pressureTxt.setText(String.format("%.2f KPA", pressure));
+                    }
+                });
+                Log.d(TAG, String.format("Update presure: %.2f%%", pressure));
             }
 
             if (characteristic.getUuid().equals(AssignedNumber.getBleUuid("led state"))) {
