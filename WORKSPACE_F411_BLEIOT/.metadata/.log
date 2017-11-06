@@ -347,158 +347,39 @@ Caused by: java.lang.ClassCastException: org.eclipse.cdt.internal.ui.editor.CEdi
 	at java.lang.reflect.Method.invoke(Method.java:498)
 	at org.eclipse.e4.core.internal.di.MethodRequestor.execute(MethodRequestor.java:55)
 	... 53 more
-!SESSION 2017-10-21 20:24:08.519 -----------------------------------------------
+!SESSION 2017-10-23 13:34:32.061 -----------------------------------------------
 eclipse.buildId=4.4.2.M20150204-1700
 java.version=1.8.0_131
 java.vendor=Oracle Corporation
 BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=en_US
 Framework arguments:  -product org.eclipse.epp.package.cpp.product
-Command-line arguments:  -os linux -ws gtk -arch x86_64 -product org.eclipse.epp.package.cpp.product
+Command-line arguments:  -data /media/kerhoas/DATADRIVE1/COURS/WORKSPACE_WEB/BLEIOT_/WORKSPACE_F411_BLEIOT -os linux -ws gtk -arch x86_64 -product org.eclipse.epp.package.cpp.product
 
-!ENTRY org.eclipse.cdt.launch 4 150 2017-10-21 20:30:23.569
-!MESSAGE Error starting process.
+!ENTRY org.eclipse.cdt.core 1 0 2017-10-23 13:35:10.022
+!MESSAGE Indexed 'stm32f411_base' (114 sources, 370 headers) in 5.35 sec: 38,342 declarations; 111,234 references; 4 unresolved inclusions; 76 syntax errors; 221 unresolved names (0.15%)
+
+!ENTRY org.eclipse.debug.core 4 2 2017-10-23 13:51:10.042
+!MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.debug.core".
 !STACK 0
-java.io.IOException: Exec_tty error:Cannot run program "/home/paulo/Desktop/MeteoStation/WORKSPACE_F411_BLEIOT/stm32f411_base/template.elf": Unknown reason
-	at org.eclipse.cdt.utils.spawner.Spawner.exec_pty(Spawner.java:387)
-	at org.eclipse.cdt.utils.spawner.Spawner.<init>(Spawner.java:99)
-	at org.eclipse.cdt.utils.spawner.ProcessFactory.exec(ProcessFactory.java:98)
-	at org.eclipse.cdt.launch.internal.LocalCDILaunchDelegate.exec(LocalCDILaunchDelegate.java:369)
-	at org.eclipse.cdt.launch.internal.LocalCDILaunchDelegate.runLocalApplication(LocalCDILaunchDelegate.java:97)
-	at org.eclipse.cdt.launch.internal.LocalCDILaunchDelegate.launch(LocalCDILaunchDelegate.java:71)
-	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:885)
-	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:739)
-	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1039)
-	at org.eclipse.debug.internal.ui.DebugUIPlugin$8.run(DebugUIPlugin.java:1256)
-	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
-!SUBENTRY 1 org.eclipse.cdt.launch 4 150 2017-10-21 20:30:23.570
-!MESSAGE Exec_tty error:Cannot run program "/home/paulo/Desktop/MeteoStation/WORKSPACE_F411_BLEIOT/stm32f411_base/template.elf": Unknown reason
-!STACK 0
-java.io.IOException: Exec_tty error:Cannot run program "/home/paulo/Desktop/MeteoStation/WORKSPACE_F411_BLEIOT/stm32f411_base/template.elf": Unknown reason
-	at org.eclipse.cdt.utils.spawner.Spawner.exec_pty(Spawner.java:387)
-	at org.eclipse.cdt.utils.spawner.Spawner.<init>(Spawner.java:99)
-	at org.eclipse.cdt.utils.spawner.ProcessFactory.exec(ProcessFactory.java:98)
-	at org.eclipse.cdt.launch.internal.LocalCDILaunchDelegate.exec(LocalCDILaunchDelegate.java:369)
-	at org.eclipse.cdt.launch.internal.LocalCDILaunchDelegate.runLocalApplication(LocalCDILaunchDelegate.java:97)
-	at org.eclipse.cdt.launch.internal.LocalCDILaunchDelegate.launch(LocalCDILaunchDelegate.java:71)
-	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:885)
-	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:739)
-	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1039)
-	at org.eclipse.debug.internal.ui.DebugUIPlugin$8.run(DebugUIPlugin.java:1256)
+java.lang.NullPointerException
+	at org.eclipse.cdt.debug.mi.core.cdi.Session.terminate(Session.java:191)
+	at org.eclipse.cdt.debug.internal.core.SessionManager.handleTerminateEvent(SessionManager.java:74)
+	at org.eclipse.cdt.debug.internal.core.SessionManager.handleDebugEvents(SessionManager.java:59)
+	at org.eclipse.debug.core.DebugPlugin$EventNotifier.run(DebugPlugin.java:1151)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.debug.core.DebugPlugin$EventNotifier.dispatch(DebugPlugin.java:1187)
+	at org.eclipse.debug.core.DebugPlugin$EventDispatchJob.run(DebugPlugin.java:431)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
 
-!ENTRY org.eclipse.cdt.launch 4 150 2017-10-21 20:32:16.168
-!MESSAGE Error starting process.
+!ENTRY org.eclipse.debug.core 4 125 2017-10-23 13:51:10.044
+!MESSAGE An exception occurred while dispatching debug events.
 !STACK 0
-java.io.IOException: Exec_tty error:Cannot run program "/home/paulo/Desktop/MeteoStation/WORKSPACE_F411_BLEIOT/stm32f411_base/template.elf": Unknown reason
-	at org.eclipse.cdt.utils.spawner.Spawner.exec_pty(Spawner.java:387)
-	at org.eclipse.cdt.utils.spawner.Spawner.<init>(Spawner.java:99)
-	at org.eclipse.cdt.utils.spawner.ProcessFactory.exec(ProcessFactory.java:98)
-	at org.eclipse.cdt.launch.internal.LocalCDILaunchDelegate.exec(LocalCDILaunchDelegate.java:369)
-	at org.eclipse.cdt.launch.internal.LocalCDILaunchDelegate.runLocalApplication(LocalCDILaunchDelegate.java:97)
-	at org.eclipse.cdt.launch.internal.LocalCDILaunchDelegate.launch(LocalCDILaunchDelegate.java:71)
-	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:885)
-	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:739)
-	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1039)
-	at org.eclipse.debug.internal.ui.DebugUIPlugin$8.run(DebugUIPlugin.java:1256)
+java.lang.NullPointerException
+	at org.eclipse.cdt.debug.mi.core.cdi.Session.terminate(Session.java:191)
+	at org.eclipse.cdt.debug.internal.core.SessionManager.handleTerminateEvent(SessionManager.java:74)
+	at org.eclipse.cdt.debug.internal.core.SessionManager.handleDebugEvents(SessionManager.java:59)
+	at org.eclipse.debug.core.DebugPlugin$EventNotifier.run(DebugPlugin.java:1151)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.debug.core.DebugPlugin$EventNotifier.dispatch(DebugPlugin.java:1187)
+	at org.eclipse.debug.core.DebugPlugin$EventDispatchJob.run(DebugPlugin.java:431)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
-!SUBENTRY 1 org.eclipse.cdt.launch 4 150 2017-10-21 20:32:16.168
-!MESSAGE Exec_tty error:Cannot run program "/home/paulo/Desktop/MeteoStation/WORKSPACE_F411_BLEIOT/stm32f411_base/template.elf": Unknown reason
-!STACK 0
-java.io.IOException: Exec_tty error:Cannot run program "/home/paulo/Desktop/MeteoStation/WORKSPACE_F411_BLEIOT/stm32f411_base/template.elf": Unknown reason
-	at org.eclipse.cdt.utils.spawner.Spawner.exec_pty(Spawner.java:387)
-	at org.eclipse.cdt.utils.spawner.Spawner.<init>(Spawner.java:99)
-	at org.eclipse.cdt.utils.spawner.ProcessFactory.exec(ProcessFactory.java:98)
-	at org.eclipse.cdt.launch.internal.LocalCDILaunchDelegate.exec(LocalCDILaunchDelegate.java:369)
-	at org.eclipse.cdt.launch.internal.LocalCDILaunchDelegate.runLocalApplication(LocalCDILaunchDelegate.java:97)
-	at org.eclipse.cdt.launch.internal.LocalCDILaunchDelegate.launch(LocalCDILaunchDelegate.java:71)
-	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:885)
-	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:739)
-	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1039)
-	at org.eclipse.debug.internal.ui.DebugUIPlugin$8.run(DebugUIPlugin.java:1256)
-	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
-
-!ENTRY org.eclipse.cdt.debug.core 4 1000 2017-10-21 20:32:26.446
-!MESSAGE Internal error logged from CDI Debug: 
-!STACK 0
-org.eclipse.cdt.debug.mi.core.cdi.MI2CDIException: {R,T}xThread terminated[]
-	at org.eclipse.cdt.debug.mi.core.cdi.SourceManager.setSourcePaths(SourceManager.java:82)
-	at org.eclipse.cdt.debug.mi.core.cdi.model.Target.setSourcePaths(Target.java:1158)
-	at org.eclipse.cdt.debug.internal.core.model.CDebugTarget.setSourceLookupPath(CDebugTarget.java:1873)
-	at org.eclipse.cdt.debug.internal.core.model.CDebugTarget.initializeSourceLookupPath(CDebugTarget.java:387)
-	at org.eclipse.cdt.debug.internal.core.model.CDebugTarget.initialize(CDebugTarget.java:288)
-	at org.eclipse.cdt.debug.internal.core.model.CDebugTarget.<init>(CDebugTarget.java:281)
-	at org.eclipse.cdt.debug.core.CDIDebugModel$1.run(CDIDebugModel.java:132)
-	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2313)
-	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2295)
-	at org.eclipse.cdt.debug.core.CDIDebugModel.newDebugTarget(CDIDebugModel.java:137)
-	at org.eclipse.cdt.debug.core.CDIDebugModel.newDebugTarget(CDIDebugModel.java:235)
-	at org.eclipse.cdt.debug.gdbjtag.core.GDBJtagLaunchConfigurationDelegate.launch(GDBJtagLaunchConfigurationDelegate.java:70)
-	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:885)
-	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:739)
-	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1039)
-	at org.eclipse.debug.internal.ui.DebugUIPlugin$8.run(DebugUIPlugin.java:1256)
-	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
-
-!ENTRY org.eclipse.cdt.debug.core 4 1000 2017-10-21 20:32:26.447
-!MESSAGE Internal error logged from CDI Debug: 
-!STACK 0
-org.eclipse.cdt.debug.mi.core.cdi.MI2CDIException: {R,T}xThread terminated[]
-	at org.eclipse.cdt.debug.mi.core.cdi.RegisterManager.getRegisterDescriptors(RegisterManager.java:196)
-	at org.eclipse.cdt.debug.mi.core.cdi.RegisterManager.getRegisterDescriptors(RegisterManager.java:174)
-	at org.eclipse.cdt.debug.mi.core.cdi.model.RegisterGroup.getRegisterDescriptors(RegisterGroup.java:43)
-	at org.eclipse.cdt.debug.internal.core.CRegisterManager.initialize(CRegisterManager.java:147)
-	at org.eclipse.cdt.debug.internal.core.model.CDebugTarget.getRegisterManager(CDebugTarget.java:1588)
-	at org.eclipse.cdt.debug.internal.core.model.CDebugTarget.initializeRegisters(CDebugTarget.java:360)
-	at org.eclipse.cdt.debug.internal.core.model.CDebugTarget.initialize(CDebugTarget.java:293)
-	at org.eclipse.cdt.debug.internal.core.model.CDebugTarget.<init>(CDebugTarget.java:281)
-	at org.eclipse.cdt.debug.core.CDIDebugModel$1.run(CDIDebugModel.java:132)
-	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2313)
-	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2295)
-	at org.eclipse.cdt.debug.core.CDIDebugModel.newDebugTarget(CDIDebugModel.java:137)
-	at org.eclipse.cdt.debug.core.CDIDebugModel.newDebugTarget(CDIDebugModel.java:235)
-	at org.eclipse.cdt.debug.gdbjtag.core.GDBJtagLaunchConfigurationDelegate.launch(GDBJtagLaunchConfigurationDelegate.java:70)
-	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:885)
-	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:739)
-	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1039)
-	at org.eclipse.debug.internal.ui.DebugUIPlugin$8.run(DebugUIPlugin.java:1256)
-	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
-
-!ENTRY org.eclipse.cdt.debug.core 4 1000 2017-10-21 20:32:26.447
-!MESSAGE Internal error logged from CDI Debug: 
-!STACK 0
-org.eclipse.cdt.debug.mi.core.cdi.MI2CDIException: {R,T}xThread terminated[]
-	at org.eclipse.cdt.debug.mi.core.cdi.RegisterManager.getRegisterDescriptors(RegisterManager.java:196)
-	at org.eclipse.cdt.debug.mi.core.cdi.RegisterManager.getRegisterDescriptors(RegisterManager.java:174)
-	at org.eclipse.cdt.debug.mi.core.cdi.model.RegisterGroup.getRegisterDescriptors(RegisterGroup.java:43)
-	at org.eclipse.cdt.debug.internal.core.CRegisterManager.initialize(CRegisterManager.java:147)
-	at org.eclipse.cdt.debug.internal.core.model.CDebugTarget.initializeRegisters(CDebugTarget.java:360)
-	at org.eclipse.cdt.debug.internal.core.model.CDebugTarget.initialize(CDebugTarget.java:293)
-	at org.eclipse.cdt.debug.internal.core.model.CDebugTarget.<init>(CDebugTarget.java:281)
-	at org.eclipse.cdt.debug.core.CDIDebugModel$1.run(CDIDebugModel.java:132)
-	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2313)
-	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2295)
-	at org.eclipse.cdt.debug.core.CDIDebugModel.newDebugTarget(CDIDebugModel.java:137)
-	at org.eclipse.cdt.debug.core.CDIDebugModel.newDebugTarget(CDIDebugModel.java:235)
-	at org.eclipse.cdt.debug.gdbjtag.core.GDBJtagLaunchConfigurationDelegate.launch(GDBJtagLaunchConfigurationDelegate.java:70)
-	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:885)
-	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:739)
-	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1039)
-	at org.eclipse.debug.internal.ui.DebugUIPlugin$8.run(DebugUIPlugin.java:1256)
-	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
-
-!ENTRY org.eclipse.cdt.debug.core 4 1000 2017-10-21 20:32:28.442
-!MESSAGE Internal error logged from CDI Debug: 
-!STACK 0
-org.eclipse.cdt.debug.mi.core.cdi.MI2CDIException: {R,T}xThread terminated[]
-	at org.eclipse.cdt.debug.mi.core.cdi.RegisterManager.getRegisterDescriptors(RegisterManager.java:196)
-	at org.eclipse.cdt.debug.mi.core.cdi.RegisterManager.getRegisterDescriptors(RegisterManager.java:174)
-	at org.eclipse.cdt.debug.mi.core.cdi.model.RegisterGroup.getRegisterDescriptors(RegisterGroup.java:43)
-	at org.eclipse.cdt.debug.internal.core.CRegisterManager.initialize(CRegisterManager.java:147)
-	at org.eclipse.cdt.debug.internal.core.model.CDebugTarget.getRegisterManager(CDebugTarget.java:1588)
-	at org.eclipse.cdt.debug.internal.core.model.CDebugTarget.handleSuspendedEvent(CDebugTarget.java:1152)
-	at org.eclipse.cdt.debug.internal.core.model.CDebugTarget.handleDebugEvents(CDebugTarget.java:919)
-	at org.eclipse.cdt.debug.mi.core.cdi.EventManager.fireEvents(EventManager.java:253)
-	at org.eclipse.cdt.debug.mi.core.cdi.EventManager.update(EventManager.java:219)
-	at java.util.Observable.notifyObservers(Observable.java:159)
-	at org.eclipse.cdt.debug.mi.core.MISession.notifyObservers(MISession.java:797)
-	at org.eclipse.cdt.debug.mi.core.EventThread.run(EventThread.java:47)

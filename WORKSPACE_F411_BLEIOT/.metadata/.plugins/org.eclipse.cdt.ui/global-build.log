@@ -1,6 +1,732 @@
-20:32:33 **** Incremental Build of configuration Default for project stm32f411_base ****
+14:03:55 **** Build of configuration Default for project stm32f411_base ****
+make all 
+/local/sdk_elec/gcc-arm-none-eabi-5_2-2015q4/bin/arm-none-eabi-gcc -IMOTENV1/Inc/ -IDrivers/STM32F4xx_HAL_Driver/Inc/ -IDrivers/CMSIS/Device/ST/STM32F4xx/Include/ -IDrivers/CMSIS/Include/ -IDrivers/BSP/STM32F4xx-Nucleo/ -IDrivers/BSP/X-NUCLEO-IDB04A1 -IMiddlewares/ST/STM32_BlueNRG/SimpleBlueNRG_HCI/includes -IMiddlewares/ST/STM32_BlueNRG/Interface -IDrivers/BSP/X-NUCLEO-IDB0xA1 -IDrivers/BSP/X_NUCLEO_IKS01A1 -IDrivers/BSP/X_NUCLEO_IKS01A2 -IMiddlewares/ST/STM32_MetaDataManager -IMiddlewares/ST/STM32_MotionAR_Library/Inc -IMiddlewares/ST/STM32_MotionCP_Library/Inc -IMiddlewares/ST/STM32_MotionFX_Library/Inc -IMiddlewares/ST/STM32_MotionGR_Library/Inc -IMiddlewares/ST/STM32_MotionID_Library/Inc -IMiddlewares/ST/STM32_MotionPM_Library/Inc -IDrivers/BSP/Components/Common -IDrivers/BSP/Components/hts221 -IDrivers/BSP/Components/lis3mdl -IDrivers/BSP/Components/lps22hb -IDrivers/BSP/Components/lps25hb -IDrivers/BSP/Components/lsm303agr -IDrivers/BSP/Components/lsm6ds0 -IDrivers/BSP/Components/lsm6ds3 -IDrivers/BSP/Components/lsm6dsl -IDrivers/BSP/Components/lsm6dsm -IDrivers/BSP/Components/stc3115 -IDrivers/BSP/X_NUCLEO_IKS01A1 -IDrivers/BSP/X_NUCLEO_IKS01A2 -DSTM32F411xE -ggdb -O0 -D ARM_MATH_CM4 -L  -mlittle-endian -mthumb -mcpu=cortex-m4 -mthumb-interwork -Wl,--gc-sections -mfpu=fpv4-sp-d16 -mfloat-abi=hard -fsingle-precision-constant -Wall -Wextra -Warray-bounds -Wno-unused-parameter -TDevice/gcc.ld -mfloat-abi=hard -lc -lgcc -lgcov -lm -Wl,-Map=template.elf.map Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal.c Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc.c Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_gpio.c Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.c Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pcd.c Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pcd_ex.c Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_uart.c Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_usart.c Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_spi.c Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.c Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma_ex.c Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_adc.c Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_adc_ex.c Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim.c Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim_ex.c Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_crc.c Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_i2c.c Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash.c Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ex.c MOTENV1/Src/main.c Drivers/CMSIS/Device/ST/STM32F4xx/Source/Templates/gcc/startup_stm32f411xe.s Drivers/BSP/STM32F4xx-Nucleo/stm32f4xx_nucleo.c MOTENV1/Src/stm32f4xx_hal_msp.c MOTENV1/Src/stm32f4xx_it.c MOTENV1/Src/system_stm32f4xx.c MOTENV1/Src/sensor_service.c MOTENV1/Src/syscalls.c MOTENV1/Src/TargetPlatform.c MOTENV1/Src/drv_uart.c Drivers/BSP/X-NUCLEO-IDB04A1/stm32_bluenrg_ble.c Middlewares/ST/STM32_BlueNRG/SimpleBlueNRG_HCI/hci/hci.c Middlewares/ST/STM32_BlueNRG/SimpleBlueNRG_HCI/hci/controller/bluenrg_gap_aci.c Middlewares/ST/STM32_BlueNRG/SimpleBlueNRG_HCI/hci/controller/bluenrg_gatt_aci.c Middlewares/ST/STM32_BlueNRG/SimpleBlueNRG_HCI/hci/controller/bluenrg_hal_aci.c Middlewares/ST/STM32_BlueNRG/SimpleBlueNRG_HCI/hci/controller/bluenrg_IFR.c Middlewares/ST/STM32_BlueNRG/SimpleBlueNRG_HCI/hci/controller/bluenrg_l2cap_aci.c Middlewares/ST/STM32_BlueNRG/SimpleBlueNRG_HCI/hci/controller/bluenrg_updater_aci.c Middlewares/ST/STM32_BlueNRG/SimpleBlueNRG_HCI/hci/controller/bluenrg_utils.c Middlewares/ST/STM32_BlueNRG/SimpleBlueNRG_HCI/utils/ble_list.c Middlewares/ST/STM32_BlueNRG/SimpleBlueNRG_HCI/utils/gp_timer.c Middlewares/ST/STM32_BlueNRG/SimpleBlueNRG_HCI/utils/osal.c Drivers/BSP/STM32F4xx-Nucleo/stm32f4xx_I2C.c Drivers/BSP/STM32F4xx-Nucleo/stm32f4xx_SPI.c Drivers/BSP/X_NUCLEO_IKS01A1/x_nucleo_iks01a1_humidity.c Drivers/BSP/X_NUCLEO_IKS01A1/x_nucleo_iks01a1_temperature.c Drivers/BSP/X_NUCLEO_IKS01A1/x_nucleo_iks01a1_pressure.c Drivers/BSP/X_NUCLEO_IKS01A1/x_nucleo_iks01a1.c Drivers/BSP/X_NUCLEO_IKS01A2/x_nucleo_iks01a2_humidity.c Drivers/BSP/X_NUCLEO_IKS01A2/x_nucleo_iks01a2_temperature.c Drivers/BSP/X_NUCLEO_IKS01A2/x_nucleo_iks01a2_pressure.c Drivers/BSP/X_NUCLEO_IKS01A2/x_nucleo_iks01a2.c Drivers/BSP/Components/hts221/HTS221_Driver_HL.c Drivers/BSP/Components/hts221/HTS221_Driver.c Drivers/BSP/Components/lps22hb/LPS22HB_Driver_HL.c Drivers/BSP/Components/lps22hb/LPS22HB_Driver.c Drivers/BSP/Components/lps25hb/LPS25HB_Driver_HL.c Drivers/BSP/Components/lps25hb/LPS25HB_Driver.c -o template.elf
+MOTENV1/Src/main.c: In function 'main':
+MOTENV1/Src/main.c:92:6: warning: implicit declaration of function 'setConnectable_2' [-Wimplicit-function-declaration]
+      setConnectable_2();
+      ^
+MOTENV1/Src/main.c: In function 'SendEnvironmentalData':
+MOTENV1/Src/main.c:150:11: warning: unused variable 'Status' [-Wunused-variable]
+   uint8_t Status;
+           ^
+Middlewares/ST/STM32_BlueNRG/SimpleBlueNRG_HCI/hci/controller/bluenrg_gap_aci.c: In function 'aci_gap_set_limited_discoverable':
+Middlewares/ST/STM32_BlueNRG/SimpleBlueNRG_HCI/hci/controller/bluenrg_gap_aci.c:123:40: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+   if ((LocalNameLen+ServiceUUIDLen+14) > sizeof(buffer))
+                                        ^
+Middlewares/ST/STM32_BlueNRG/SimpleBlueNRG_HCI/hci/controller/bluenrg_gap_aci.c: In function 'aci_gap_set_discoverable':
+Middlewares/ST/STM32_BlueNRG/SimpleBlueNRG_HCI/hci/controller/bluenrg_gap_aci.c:186:40: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+   if ((LocalNameLen+ServiceUUIDLen+14) > sizeof(buffer))
+                                        ^
+Middlewares/ST/STM32_BlueNRG/SimpleBlueNRG_HCI/hci/controller/bluenrg_gap_aci.c: In function 'aci_gap_resolve_private_address_IDB05A1':
+Middlewares/ST/STM32_BlueNRG/SimpleBlueNRG_HCI/hci/controller/bluenrg_gap_aci.c:1175:49: warning: 'sizeof' on array function parameter 'actual_address' will return size of 'uint8_t * {aka unsigned char *}' [-Wsizeof-array-argument]
+   Osal_MemCpy(actual_address, rp.address, sizeof(actual_address));  
+                                                 ^
+Middlewares/ST/STM32_BlueNRG/SimpleBlueNRG_HCI/hci/controller/bluenrg_gap_aci.c:1153:91: note: declared here
+ tBleStatus aci_gap_resolve_private_address_IDB05A1(const tBDAddr private_address, tBDAddr actual_address)
+                                                                                           ^
+Middlewares/ST/STM32_BlueNRG/SimpleBlueNRG_HCI/hci/controller/bluenrg_hal_aci.c: In function 'aci_hal_get_link_status':
+Middlewares/ST/STM32_BlueNRG/SimpleBlueNRG_HCI/hci/controller/bluenrg_hal_aci.c:235:48: warning: 'sizeof' on array function parameter 'link_status' will return size of 'uint8_t * {aka unsigned char *}' [-Wsizeof-array-argument]
+   Osal_MemCpy(link_status,rp.link_status,sizeof(link_status));
+                                                ^
+Middlewares/ST/STM32_BlueNRG/SimpleBlueNRG_HCI/hci/controller/bluenrg_hal_aci.c:218:44: note: declared here
+ tBleStatus aci_hal_get_link_status(uint8_t link_status[8], uint16_t conn_handle[8])
+                                            ^
+Middlewares/ST/STM32_BlueNRG/SimpleBlueNRG_HCI/hci/controller/bluenrg_IFR.c:357:2: warning: #warning BLUENRG_CONFIG not valid [-Wcpp]
+ #warning BLUENRG_CONFIG not valid
+  ^
+Middlewares/ST/STM32_BlueNRG/SimpleBlueNRG_HCI/hci/controller/bluenrg_utils.c: In function 'program_device':
+Middlewares/ST/STM32_BlueNRG/SimpleBlueNRG_HCI/hci/controller/bluenrg_utils.c:102:3: warning: implicit declaration of function 'BlueNRG_HW_Bootloader' [-Wimplicit-function-declaration]
+   BlueNRG_HW_Bootloader();
+   ^
+Middlewares/ST/STM32_BlueNRG/SimpleBlueNRG_HCI/hci/controller/bluenrg_utils.c:146:20: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+       for (j=i; ((j<SECTOR_SIZE+i)&&(j<fw_size)); j += data_size) {
+                    ^
+Middlewares/ST/STM32_BlueNRG/SimpleBlueNRG_HCI/hci/controller/bluenrg_utils.c:183:3: warning: implicit declaration of function 'BlueNRG_RST' [-Wimplicit-function-declaration]
+   BlueNRG_RST();
+   ^
+/local/sdk_elec/gcc-arm-none-eabi-5_2-2015q4/bin/arm-none-eabi-objcopy -O ihex template.elf   template.hex
+/local/sdk_elec/gcc-arm-none-eabi-5_2-2015q4/bin/arm-none-eabi-objcopy -O binary template.elf template.bin
+14:06:09 **** Incremental Build of configuration Default for project stm32f411_base ****
 make all 
 make: Nothing to be done for 'all'.
-20:32:37 **** Incremental Build of configuration Default for project stm32f411_base ****
+14:22:05 **** Incremental Build of configuration Default for project stm32f411_base ****
+make all 
+make: Nothing to be done for 'all'.
+14:22:07 **** Incremental Build of configuration Default for project stm32f411_base ****
+make all 
+make: Nothing to be done for 'all'.
+14:22:39 **** Incremental Build of configuration Default for project stm32f411_base ****
+make all 
+make: Nothing to be done for 'all'.
+14:23:09 **** Incremental Build of configuration Default for project stm32f411_base ****
+make all 
+make: Nothing to be done for 'all'.
+14:23:38 **** Incremental Build of configuration Default for project stm32f411_base ****
+make all 
+make: Nothing to be done for 'all'.
+14:39:01 **** Incremental Build of configuration Default for project stm32f411_base ****
+make all 
+make: Nothing to be done for 'all'.
+14:39:03 **** Incremental Build of configuration Default for project stm32f411_base ****
+make all 
+make: Nothing to be done for 'all'.
+14:51:56 **** Incremental Build of configuration Default for project stm32f411_base ****
+make all 
+make: Nothing to be done for 'all'.
+14:53:17 **** Incremental Build of configuration Default for project stm32f411_base ****
+make all 
+make: Nothing to be done for 'all'.
+15:05:06 **** Incremental Build of configuration Default for project stm32f411_base ****
+make all 
+make: Nothing to be done for 'all'.
+15:59:19 **** Incremental Build of configuration Default for project stm32f411_base ****
+make all 
+make: Nothing to be done for 'all'.
+16:11:38 **** Incremental Build of configuration Default for project stm32f411_base ****
+make all 
+make: Nothing to be done for 'all'.
+16:21:55 **** Incremental Build of configuration Default for project stm32f411_base ****
+make all 
+make: Nothing to be done for 'all'.
+16:25:45 **** Incremental Build of configuration Default for project stm32f411_base ****
+make all 
+make: Nothing to be done for 'all'.
+16:37:29 **** Incremental Build of configuration Default for project stm32f411_base ****
+make all 
+make: Nothing to be done for 'all'.
+16:43:48 **** Incremental Build of configuration Default for project stm32f411_base ****
+make all 
+make: Nothing to be done for 'all'.
+16:46:08 **** Incremental Build of configuration Default for project stm32f411_base ****
+make all 
+make: Nothing to be done for 'all'.
+16:50:30 **** Incremental Build of configuration Default for project stm32f411_base ****
+make all 
+make: Nothing to be done for 'all'.
+16:50:48 **** Incremental Build of configuration Default for project stm32f411_base ****
+make all 
+make: Nothing to be done for 'all'.
+16:51:55 **** Incremental Build of configuration Default for project stm32f411_base ****
+make all 
+make: Nothing to be done for 'all'.
+16:57:32 **** Incremental Build of configuration Default for project stm32f411_base ****
+make all 
+make: Nothing to be done for 'all'.
+17:17:50 **** Incremental Build of configuration Default for project stm32f411_base ****
+make all 
+/local/sdk_elec/gcc-arm-none-eabi-5_2-2015q4/bin/arm-none-eabi-gcc -IMOTENV1/Inc/ -IDrivers/STM32F4xx_HAL_Driver/Inc/ -IDrivers/CMSIS/Device/ST/STM32F4xx/Include/ -IDrivers/CMSIS/Include/ -IDrivers/BSP/STM32F4xx-Nucleo/ -IDrivers/BSP/X-NUCLEO-IDB04A1 -IMiddlewares/ST/STM32_BlueNRG/SimpleBlueNRG_HCI/includes -IMiddlewares/ST/STM32_BlueNRG/Interface -IDrivers/BSP/X-NUCLEO-IDB0xA1 -IDrivers/BSP/X_NUCLEO_IKS01A1 -IDrivers/BSP/X_NUCLEO_IKS01A2 -IMiddlewares/ST/STM32_MetaDataManager -IMiddlewares/ST/STM32_MotionAR_Library/Inc -IMiddlewares/ST/STM32_MotionCP_Library/Inc -IMiddlewares/ST/STM32_MotionFX_Library/Inc -IMiddlewares/ST/STM32_MotionGR_Library/Inc -IMiddlewares/ST/STM32_MotionID_Library/Inc -IMiddlewares/ST/STM32_MotionPM_Library/Inc -IDrivers/BSP/Components/Common -IDrivers/BSP/Components/hts221 -IDrivers/BSP/Components/lis3mdl -IDrivers/BSP/Components/lps22hb -IDrivers/BSP/Components/lps25hb -IDrivers/BSP/Components/lsm303agr -IDrivers/BSP/Components/lsm6ds0 -IDrivers/BSP/Components/lsm6ds3 -IDrivers/BSP/Components/lsm6dsl -IDrivers/BSP/Components/lsm6dsm -IDrivers/BSP/Components/stc3115 -IDrivers/BSP/X_NUCLEO_IKS01A1 -IDrivers/BSP/X_NUCLEO_IKS01A2 -DSTM32F411xE -ggdb -O0 -D ARM_MATH_CM4 -L  -mlittle-endian -mthumb -mcpu=cortex-m4 -mthumb-interwork -Wl,--gc-sections -mfpu=fpv4-sp-d16 -mfloat-abi=hard -fsingle-precision-constant -Wall -Wextra -Warray-bounds -Wno-unused-parameter -TDevice/gcc.ld -mfloat-abi=hard -lc -lgcc -lgcov -lm -Wl,-Map=template.elf.map Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal.c Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc.c Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_gpio.c Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.c Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pcd.c Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pcd_ex.c Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_uart.c Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_usart.c Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_spi.c Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.c Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma_ex.c Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_adc.c Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_adc_ex.c Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim.c Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim_ex.c Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_crc.c Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_i2c.c Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash.c Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ex.c MOTENV1/Src/main.c Drivers/CMSIS/Device/ST/STM32F4xx/Source/Templates/gcc/startup_stm32f411xe.s Drivers/BSP/STM32F4xx-Nucleo/stm32f4xx_nucleo.c MOTENV1/Src/stm32f4xx_hal_msp.c MOTENV1/Src/stm32f4xx_it.c MOTENV1/Src/system_stm32f4xx.c MOTENV1/Src/sensor_service.c MOTENV1/Src/syscalls.c MOTENV1/Src/TargetPlatform.c MOTENV1/Src/drv_uart.c Drivers/BSP/X-NUCLEO-IDB04A1/stm32_bluenrg_ble.c Middlewares/ST/STM32_BlueNRG/SimpleBlueNRG_HCI/hci/hci.c Middlewares/ST/STM32_BlueNRG/SimpleBlueNRG_HCI/hci/controller/bluenrg_gap_aci.c Middlewares/ST/STM32_BlueNRG/SimpleBlueNRG_HCI/hci/controller/bluenrg_gatt_aci.c Middlewares/ST/STM32_BlueNRG/SimpleBlueNRG_HCI/hci/controller/bluenrg_hal_aci.c Middlewares/ST/STM32_BlueNRG/SimpleBlueNRG_HCI/hci/controller/bluenrg_IFR.c Middlewares/ST/STM32_BlueNRG/SimpleBlueNRG_HCI/hci/controller/bluenrg_l2cap_aci.c Middlewares/ST/STM32_BlueNRG/SimpleBlueNRG_HCI/hci/controller/bluenrg_updater_aci.c Middlewares/ST/STM32_BlueNRG/SimpleBlueNRG_HCI/hci/controller/bluenrg_utils.c Middlewares/ST/STM32_BlueNRG/SimpleBlueNRG_HCI/utils/ble_list.c Middlewares/ST/STM32_BlueNRG/SimpleBlueNRG_HCI/utils/gp_timer.c Middlewares/ST/STM32_BlueNRG/SimpleBlueNRG_HCI/utils/osal.c Drivers/BSP/STM32F4xx-Nucleo/stm32f4xx_I2C.c Drivers/BSP/STM32F4xx-Nucleo/stm32f4xx_SPI.c Drivers/BSP/X_NUCLEO_IKS01A1/x_nucleo_iks01a1_humidity.c Drivers/BSP/X_NUCLEO_IKS01A1/x_nucleo_iks01a1_temperature.c Drivers/BSP/X_NUCLEO_IKS01A1/x_nucleo_iks01a1_pressure.c Drivers/BSP/X_NUCLEO_IKS01A1/x_nucleo_iks01a1.c Drivers/BSP/X_NUCLEO_IKS01A2/x_nucleo_iks01a2_humidity.c Drivers/BSP/X_NUCLEO_IKS01A2/x_nucleo_iks01a2_temperature.c Drivers/BSP/X_NUCLEO_IKS01A2/x_nucleo_iks01a2_pressure.c Drivers/BSP/X_NUCLEO_IKS01A2/x_nucleo_iks01a2.c Drivers/BSP/Components/hts221/HTS221_Driver_HL.c Drivers/BSP/Components/hts221/HTS221_Driver.c Drivers/BSP/Components/lps22hb/LPS22HB_Driver_HL.c Drivers/BSP/Components/lps22hb/LPS22HB_Driver.c Drivers/BSP/Components/lps25hb/LPS25HB_Driver_HL.c Drivers/BSP/Components/lps25hb/LPS25HB_Driver.c -o template.elf
+MOTENV1/Src/main.c: In function 'main':
+MOTENV1/Src/main.c:92:6: warning: implicit declaration of function 'setConnectable_2' [-Wimplicit-function-declaration]
+      setConnectable_2();
+      ^
+MOTENV1/Src/main.c: In function 'SendEnvironmentalData':
+MOTENV1/Src/main.c:150:11: warning: unused variable 'Status' [-Wunused-variable]
+   uint8_t Status;
+           ^
+Middlewares/ST/STM32_BlueNRG/SimpleBlueNRG_HCI/hci/controller/bluenrg_gap_aci.c: In function 'aci_gap_set_limited_discoverable':
+Middlewares/ST/STM32_BlueNRG/SimpleBlueNRG_HCI/hci/controller/bluenrg_gap_aci.c:123:40: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+   if ((LocalNameLen+ServiceUUIDLen+14) > sizeof(buffer))
+                                        ^
+Middlewares/ST/STM32_BlueNRG/SimpleBlueNRG_HCI/hci/controller/bluenrg_gap_aci.c: In function 'aci_gap_set_discoverable':
+Middlewares/ST/STM32_BlueNRG/SimpleBlueNRG_HCI/hci/controller/bluenrg_gap_aci.c:186:40: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+   if ((LocalNameLen+ServiceUUIDLen+14) > sizeof(buffer))
+                                        ^
+Middlewares/ST/STM32_BlueNRG/SimpleBlueNRG_HCI/hci/controller/bluenrg_gap_aci.c: In function 'aci_gap_resolve_private_address_IDB05A1':
+Middlewares/ST/STM32_BlueNRG/SimpleBlueNRG_HCI/hci/controller/bluenrg_gap_aci.c:1175:49: warning: 'sizeof' on array function parameter 'actual_address' will return size of 'uint8_t * {aka unsigned char *}' [-Wsizeof-array-argument]
+   Osal_MemCpy(actual_address, rp.address, sizeof(actual_address));  
+                                                 ^
+Middlewares/ST/STM32_BlueNRG/SimpleBlueNRG_HCI/hci/controller/bluenrg_gap_aci.c:1153:91: note: declared here
+ tBleStatus aci_gap_resolve_private_address_IDB05A1(const tBDAddr private_address, tBDAddr actual_address)
+                                                                                           ^
+Middlewares/ST/STM32_BlueNRG/SimpleBlueNRG_HCI/hci/controller/bluenrg_hal_aci.c: In function 'aci_hal_get_link_status':
+Middlewares/ST/STM32_BlueNRG/SimpleBlueNRG_HCI/hci/controller/bluenrg_hal_aci.c:235:48: warning: 'sizeof' on array function parameter 'link_status' will return size of 'uint8_t * {aka unsigned char *}' [-Wsizeof-array-argument]
+   Osal_MemCpy(link_status,rp.link_status,sizeof(link_status));
+                                                ^
+Middlewares/ST/STM32_BlueNRG/SimpleBlueNRG_HCI/hci/controller/bluenrg_hal_aci.c:218:44: note: declared here
+ tBleStatus aci_hal_get_link_status(uint8_t link_status[8], uint16_t conn_handle[8])
+                                            ^
+Middlewares/ST/STM32_BlueNRG/SimpleBlueNRG_HCI/hci/controller/bluenrg_IFR.c:357:2: warning: #warning BLUENRG_CONFIG not valid [-Wcpp]
+ #warning BLUENRG_CONFIG not valid
+  ^
+Middlewares/ST/STM32_BlueNRG/SimpleBlueNRG_HCI/hci/controller/bluenrg_utils.c: In function 'program_device':
+Middlewares/ST/STM32_BlueNRG/SimpleBlueNRG_HCI/hci/controller/bluenrg_utils.c:102:3: warning: implicit declaration of function 'BlueNRG_HW_Bootloader' [-Wimplicit-function-declaration]
+   BlueNRG_HW_Bootloader();
+   ^
+Middlewares/ST/STM32_BlueNRG/SimpleBlueNRG_HCI/hci/controller/bluenrg_utils.c:146:20: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+       for (j=i; ((j<SECTOR_SIZE+i)&&(j<fw_size)); j += data_size) {
+                    ^
+Middlewares/ST/STM32_BlueNRG/SimpleBlueNRG_HCI/hci/controller/bluenrg_utils.c:183:3: warning: implicit declaration of function 'BlueNRG_RST' [-Wimplicit-function-declaration]
+   BlueNRG_RST();
+   ^
+/local/sdk_elec/gcc-arm-none-eabi-5_2-2015q4/bin/arm-none-eabi-objcopy -O ihex template.elf   template.hex
+/local/sdk_elec/gcc-arm-none-eabi-5_2-2015q4/bin/arm-none-eabi-objcopy -O binary template.elf template.bin
+17:18:01 **** Incremental Build of configuration Default for project stm32f411_base ****
+make all 
+make: Nothing to be done for 'all'.
+17:27:42 **** Incremental Build of configuration Default for project stm32f411_base ****
+make all 
+/local/sdk_elec/gcc-arm-none-eabi-5_2-2015q4/bin/arm-none-eabi-gcc -IMOTENV1/Inc/ -IDrivers/STM32F4xx_HAL_Driver/Inc/ -IDrivers/CMSIS/Device/ST/STM32F4xx/Include/ -IDrivers/CMSIS/Include/ -IDrivers/BSP/STM32F4xx-Nucleo/ -IDrivers/BSP/X-NUCLEO-IDB04A1 -IMiddlewares/ST/STM32_BlueNRG/SimpleBlueNRG_HCI/includes -IMiddlewares/ST/STM32_BlueNRG/Interface -IDrivers/BSP/X-NUCLEO-IDB0xA1 -IDrivers/BSP/X_NUCLEO_IKS01A1 -IDrivers/BSP/X_NUCLEO_IKS01A2 -IMiddlewares/ST/STM32_MetaDataManager -IMiddlewares/ST/STM32_MotionAR_Library/Inc -IMiddlewares/ST/STM32_MotionCP_Library/Inc -IMiddlewares/ST/STM32_MotionFX_Library/Inc -IMiddlewares/ST/STM32_MotionGR_Library/Inc -IMiddlewares/ST/STM32_MotionID_Library/Inc -IMiddlewares/ST/STM32_MotionPM_Library/Inc -IDrivers/BSP/Components/Common -IDrivers/BSP/Components/hts221 -IDrivers/BSP/Components/lis3mdl -IDrivers/BSP/Components/lps22hb -IDrivers/BSP/Components/lps25hb -IDrivers/BSP/Components/lsm303agr -IDrivers/BSP/Components/lsm6ds0 -IDrivers/BSP/Components/lsm6ds3 -IDrivers/BSP/Components/lsm6dsl -IDrivers/BSP/Components/lsm6dsm -IDrivers/BSP/Components/stc3115 -IDrivers/BSP/X_NUCLEO_IKS01A1 -IDrivers/BSP/X_NUCLEO_IKS01A2 -DSTM32F411xE -ggdb -O0 -D ARM_MATH_CM4 -L  -mlittle-endian -mthumb -mcpu=cortex-m4 -mthumb-interwork -Wl,--gc-sections -mfpu=fpv4-sp-d16 -mfloat-abi=hard -fsingle-precision-constant -Wall -Wextra -Warray-bounds -Wno-unused-parameter -TDevice/gcc.ld -mfloat-abi=hard -lc -lgcc -lgcov -lm -Wl,-Map=template.elf.map Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal.c Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc.c Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_gpio.c Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.c Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pcd.c Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pcd_ex.c Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_uart.c Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_usart.c Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_spi.c Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.c Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma_ex.c Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_adc.c Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_adc_ex.c Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim.c Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim_ex.c Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_crc.c Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_i2c.c Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash.c Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ex.c MOTENV1/Src/main.c Drivers/CMSIS/Device/ST/STM32F4xx/Source/Templates/gcc/startup_stm32f411xe.s Drivers/BSP/STM32F4xx-Nucleo/stm32f4xx_nucleo.c MOTENV1/Src/stm32f4xx_hal_msp.c MOTENV1/Src/stm32f4xx_it.c MOTENV1/Src/system_stm32f4xx.c MOTENV1/Src/sensor_service.c MOTENV1/Src/syscalls.c MOTENV1/Src/TargetPlatform.c MOTENV1/Src/drv_uart.c Drivers/BSP/X-NUCLEO-IDB04A1/stm32_bluenrg_ble.c Middlewares/ST/STM32_BlueNRG/SimpleBlueNRG_HCI/hci/hci.c Middlewares/ST/STM32_BlueNRG/SimpleBlueNRG_HCI/hci/controller/bluenrg_gap_aci.c Middlewares/ST/STM32_BlueNRG/SimpleBlueNRG_HCI/hci/controller/bluenrg_gatt_aci.c Middlewares/ST/STM32_BlueNRG/SimpleBlueNRG_HCI/hci/controller/bluenrg_hal_aci.c Middlewares/ST/STM32_BlueNRG/SimpleBlueNRG_HCI/hci/controller/bluenrg_IFR.c Middlewares/ST/STM32_BlueNRG/SimpleBlueNRG_HCI/hci/controller/bluenrg_l2cap_aci.c Middlewares/ST/STM32_BlueNRG/SimpleBlueNRG_HCI/hci/controller/bluenrg_updater_aci.c Middlewares/ST/STM32_BlueNRG/SimpleBlueNRG_HCI/hci/controller/bluenrg_utils.c Middlewares/ST/STM32_BlueNRG/SimpleBlueNRG_HCI/utils/ble_list.c Middlewares/ST/STM32_BlueNRG/SimpleBlueNRG_HCI/utils/gp_timer.c Middlewares/ST/STM32_BlueNRG/SimpleBlueNRG_HCI/utils/osal.c Drivers/BSP/STM32F4xx-Nucleo/stm32f4xx_I2C.c Drivers/BSP/STM32F4xx-Nucleo/stm32f4xx_SPI.c Drivers/BSP/X_NUCLEO_IKS01A1/x_nucleo_iks01a1_humidity.c Drivers/BSP/X_NUCLEO_IKS01A1/x_nucleo_iks01a1_temperature.c Drivers/BSP/X_NUCLEO_IKS01A1/x_nucleo_iks01a1_pressure.c Drivers/BSP/X_NUCLEO_IKS01A1/x_nucleo_iks01a1.c Drivers/BSP/X_NUCLEO_IKS01A2/x_nucleo_iks01a2_humidity.c Drivers/BSP/X_NUCLEO_IKS01A2/x_nucleo_iks01a2_temperature.c Drivers/BSP/X_NUCLEO_IKS01A2/x_nucleo_iks01a2_pressure.c Drivers/BSP/X_NUCLEO_IKS01A2/x_nucleo_iks01a2.c Drivers/BSP/Components/hts221/HTS221_Driver_HL.c Drivers/BSP/Components/hts221/HTS221_Driver.c Drivers/BSP/Components/lps22hb/LPS22HB_Driver_HL.c Drivers/BSP/Components/lps22hb/LPS22HB_Driver.c Drivers/BSP/Components/lps25hb/LPS25HB_Driver_HL.c Drivers/BSP/Components/lps25hb/LPS25HB_Driver.c -o template.elf
+MOTENV1/Src/main.c: In function 'main':
+MOTENV1/Src/main.c:92:6: warning: implicit declaration of function 'setConnectable_2' [-Wimplicit-function-declaration]
+      setConnectable_2();
+      ^
+MOTENV1/Src/main.c: In function 'SendEnvironmentalData':
+MOTENV1/Src/main.c:150:11: warning: unused variable 'Status' [-Wunused-variable]
+   uint8_t Status;
+           ^
+Middlewares/ST/STM32_BlueNRG/SimpleBlueNRG_HCI/hci/controller/bluenrg_gap_aci.c: In function 'aci_gap_set_limited_discoverable':
+Middlewares/ST/STM32_BlueNRG/SimpleBlueNRG_HCI/hci/controller/bluenrg_gap_aci.c:123:40: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+   if ((LocalNameLen+ServiceUUIDLen+14) > sizeof(buffer))
+                                        ^
+Middlewares/ST/STM32_BlueNRG/SimpleBlueNRG_HCI/hci/controller/bluenrg_gap_aci.c: In function 'aci_gap_set_discoverable':
+Middlewares/ST/STM32_BlueNRG/SimpleBlueNRG_HCI/hci/controller/bluenrg_gap_aci.c:186:40: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+   if ((LocalNameLen+ServiceUUIDLen+14) > sizeof(buffer))
+                                        ^
+Middlewares/ST/STM32_BlueNRG/SimpleBlueNRG_HCI/hci/controller/bluenrg_gap_aci.c: In function 'aci_gap_resolve_private_address_IDB05A1':
+Middlewares/ST/STM32_BlueNRG/SimpleBlueNRG_HCI/hci/controller/bluenrg_gap_aci.c:1175:49: warning: 'sizeof' on array function parameter 'actual_address' will return size of 'uint8_t * {aka unsigned char *}' [-Wsizeof-array-argument]
+   Osal_MemCpy(actual_address, rp.address, sizeof(actual_address));  
+                                                 ^
+Middlewares/ST/STM32_BlueNRG/SimpleBlueNRG_HCI/hci/controller/bluenrg_gap_aci.c:1153:91: note: declared here
+ tBleStatus aci_gap_resolve_private_address_IDB05A1(const tBDAddr private_address, tBDAddr actual_address)
+                                                                                           ^
+Middlewares/ST/STM32_BlueNRG/SimpleBlueNRG_HCI/hci/controller/bluenrg_hal_aci.c: In function 'aci_hal_get_link_status':
+Middlewares/ST/STM32_BlueNRG/SimpleBlueNRG_HCI/hci/controller/bluenrg_hal_aci.c:235:48: warning: 'sizeof' on array function parameter 'link_status' will return size of 'uint8_t * {aka unsigned char *}' [-Wsizeof-array-argument]
+   Osal_MemCpy(link_status,rp.link_status,sizeof(link_status));
+                                                ^
+Middlewares/ST/STM32_BlueNRG/SimpleBlueNRG_HCI/hci/controller/bluenrg_hal_aci.c:218:44: note: declared here
+ tBleStatus aci_hal_get_link_status(uint8_t link_status[8], uint16_t conn_handle[8])
+                                            ^
+Middlewares/ST/STM32_BlueNRG/SimpleBlueNRG_HCI/hci/controller/bluenrg_IFR.c:357:2: warning: #warning BLUENRG_CONFIG not valid [-Wcpp]
+ #warning BLUENRG_CONFIG not valid
+  ^
+Middlewares/ST/STM32_BlueNRG/SimpleBlueNRG_HCI/hci/controller/bluenrg_utils.c: In function 'program_device':
+Middlewares/ST/STM32_BlueNRG/SimpleBlueNRG_HCI/hci/controller/bluenrg_utils.c:102:3: warning: implicit declaration of function 'BlueNRG_HW_Bootloader' [-Wimplicit-function-declaration]
+   BlueNRG_HW_Bootloader();
+   ^
+Middlewares/ST/STM32_BlueNRG/SimpleBlueNRG_HCI/hci/controller/bluenrg_utils.c:146:20: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+       for (j=i; ((j<SECTOR_SIZE+i)&&(j<fw_size)); j += data_size) {
+                    ^
+Middlewares/ST/STM32_BlueNRG/SimpleBlueNRG_HCI/hci/controller/bluenrg_utils.c:183:3: warning: implicit declaration of function 'BlueNRG_RST' [-Wimplicit-function-declaration]
+   BlueNRG_RST();
+   ^
+/local/sdk_elec/gcc-arm-none-eabi-5_2-2015q4/bin/arm-none-eabi-objcopy -O ihex template.elf   template.hex
+/local/sdk_elec/gcc-arm-none-eabi-5_2-2015q4/bin/arm-none-eabi-objcopy -O binary template.elf template.bin
+17:27:51 **** Incremental Build of configuration Default for project stm32f411_base ****
+make all 
+make: Nothing to be done for 'all'.
+17:28:42 **** Incremental Build of configuration Default for project stm32f411_base ****
+make all 
+make: Nothing to be done for 'all'.
+17:28:51 **** Clean-only build of configuration Default for project stm32f411_base ****
+make clean 
+rm -f *.o template.elf template.hex template.bin template.map
+17:28:52 **** Build of configuration Default for project stm32f411_base ****
+make all 
+/local/sdk_elec/gcc-arm-none-eabi-5_2-2015q4/bin/arm-none-eabi-gcc -IMOTENV1/Inc/ -IDrivers/STM32F4xx_HAL_Driver/Inc/ -IDrivers/CMSIS/Device/ST/STM32F4xx/Include/ -IDrivers/CMSIS/Include/ -IDrivers/BSP/STM32F4xx-Nucleo/ -IDrivers/BSP/X-NUCLEO-IDB04A1 -IMiddlewares/ST/STM32_BlueNRG/SimpleBlueNRG_HCI/includes -IMiddlewares/ST/STM32_BlueNRG/Interface -IDrivers/BSP/X-NUCLEO-IDB0xA1 -IDrivers/BSP/X_NUCLEO_IKS01A1 -IDrivers/BSP/X_NUCLEO_IKS01A2 -IMiddlewares/ST/STM32_MetaDataManager -IMiddlewares/ST/STM32_MotionAR_Library/Inc -IMiddlewares/ST/STM32_MotionCP_Library/Inc -IMiddlewares/ST/STM32_MotionFX_Library/Inc -IMiddlewares/ST/STM32_MotionGR_Library/Inc -IMiddlewares/ST/STM32_MotionID_Library/Inc -IMiddlewares/ST/STM32_MotionPM_Library/Inc -IDrivers/BSP/Components/Common -IDrivers/BSP/Components/hts221 -IDrivers/BSP/Components/lis3mdl -IDrivers/BSP/Components/lps22hb -IDrivers/BSP/Components/lps25hb -IDrivers/BSP/Components/lsm303agr -IDrivers/BSP/Components/lsm6ds0 -IDrivers/BSP/Components/lsm6ds3 -IDrivers/BSP/Components/lsm6dsl -IDrivers/BSP/Components/lsm6dsm -IDrivers/BSP/Components/stc3115 -IDrivers/BSP/X_NUCLEO_IKS01A1 -IDrivers/BSP/X_NUCLEO_IKS01A2 -DSTM32F411xE -ggdb -O0 -D ARM_MATH_CM4 -L  -mlittle-endian -mthumb -mcpu=cortex-m4 -mthumb-interwork -Wl,--gc-sections -mfpu=fpv4-sp-d16 -mfloat-abi=hard -fsingle-precision-constant -Wall -Wextra -Warray-bounds -Wno-unused-parameter -TDevice/gcc.ld -mfloat-abi=hard -lc -lgcc -lgcov -lm -Wl,-Map=template.elf.map Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal.c Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc.c Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_gpio.c Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.c Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pcd.c Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pcd_ex.c Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_uart.c Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_usart.c Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_spi.c Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.c Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma_ex.c Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_adc.c Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_adc_ex.c Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim.c Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim_ex.c Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_crc.c Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_i2c.c Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash.c Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ex.c MOTENV1/Src/main.c Drivers/CMSIS/Device/ST/STM32F4xx/Source/Templates/gcc/startup_stm32f411xe.s Drivers/BSP/STM32F4xx-Nucleo/stm32f4xx_nucleo.c MOTENV1/Src/stm32f4xx_hal_msp.c MOTENV1/Src/stm32f4xx_it.c MOTENV1/Src/system_stm32f4xx.c MOTENV1/Src/sensor_service.c MOTENV1/Src/syscalls.c MOTENV1/Src/TargetPlatform.c MOTENV1/Src/drv_uart.c Drivers/BSP/X-NUCLEO-IDB04A1/stm32_bluenrg_ble.c Middlewares/ST/STM32_BlueNRG/SimpleBlueNRG_HCI/hci/hci.c Middlewares/ST/STM32_BlueNRG/SimpleBlueNRG_HCI/hci/controller/bluenrg_gap_aci.c Middlewares/ST/STM32_BlueNRG/SimpleBlueNRG_HCI/hci/controller/bluenrg_gatt_aci.c Middlewares/ST/STM32_BlueNRG/SimpleBlueNRG_HCI/hci/controller/bluenrg_hal_aci.c Middlewares/ST/STM32_BlueNRG/SimpleBlueNRG_HCI/hci/controller/bluenrg_IFR.c Middlewares/ST/STM32_BlueNRG/SimpleBlueNRG_HCI/hci/controller/bluenrg_l2cap_aci.c Middlewares/ST/STM32_BlueNRG/SimpleBlueNRG_HCI/hci/controller/bluenrg_updater_aci.c Middlewares/ST/STM32_BlueNRG/SimpleBlueNRG_HCI/hci/controller/bluenrg_utils.c Middlewares/ST/STM32_BlueNRG/SimpleBlueNRG_HCI/utils/ble_list.c Middlewares/ST/STM32_BlueNRG/SimpleBlueNRG_HCI/utils/gp_timer.c Middlewares/ST/STM32_BlueNRG/SimpleBlueNRG_HCI/utils/osal.c Drivers/BSP/STM32F4xx-Nucleo/stm32f4xx_I2C.c Drivers/BSP/STM32F4xx-Nucleo/stm32f4xx_SPI.c Drivers/BSP/X_NUCLEO_IKS01A1/x_nucleo_iks01a1_humidity.c Drivers/BSP/X_NUCLEO_IKS01A1/x_nucleo_iks01a1_temperature.c Drivers/BSP/X_NUCLEO_IKS01A1/x_nucleo_iks01a1_pressure.c Drivers/BSP/X_NUCLEO_IKS01A1/x_nucleo_iks01a1.c Drivers/BSP/X_NUCLEO_IKS01A2/x_nucleo_iks01a2_humidity.c Drivers/BSP/X_NUCLEO_IKS01A2/x_nucleo_iks01a2_temperature.c Drivers/BSP/X_NUCLEO_IKS01A2/x_nucleo_iks01a2_pressure.c Drivers/BSP/X_NUCLEO_IKS01A2/x_nucleo_iks01a2.c Drivers/BSP/Components/hts221/HTS221_Driver_HL.c Drivers/BSP/Components/hts221/HTS221_Driver.c Drivers/BSP/Components/lps22hb/LPS22HB_Driver_HL.c Drivers/BSP/Components/lps22hb/LPS22HB_Driver.c Drivers/BSP/Components/lps25hb/LPS25HB_Driver_HL.c Drivers/BSP/Components/lps25hb/LPS25HB_Driver.c -o template.elf
+MOTENV1/Src/main.c: In function 'main':
+MOTENV1/Src/main.c:92:6: warning: implicit declaration of function 'setConnectable_2' [-Wimplicit-function-declaration]
+      setConnectable_2();
+      ^
+MOTENV1/Src/main.c: In function 'SendEnvironmentalData':
+MOTENV1/Src/main.c:150:11: warning: unused variable 'Status' [-Wunused-variable]
+   uint8_t Status;
+           ^
+Middlewares/ST/STM32_BlueNRG/SimpleBlueNRG_HCI/hci/controller/bluenrg_gap_aci.c: In function 'aci_gap_set_limited_discoverable':
+Middlewares/ST/STM32_BlueNRG/SimpleBlueNRG_HCI/hci/controller/bluenrg_gap_aci.c:123:40: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+   if ((LocalNameLen+ServiceUUIDLen+14) > sizeof(buffer))
+                                        ^
+Middlewares/ST/STM32_BlueNRG/SimpleBlueNRG_HCI/hci/controller/bluenrg_gap_aci.c: In function 'aci_gap_set_discoverable':
+Middlewares/ST/STM32_BlueNRG/SimpleBlueNRG_HCI/hci/controller/bluenrg_gap_aci.c:186:40: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+   if ((LocalNameLen+ServiceUUIDLen+14) > sizeof(buffer))
+                                        ^
+Middlewares/ST/STM32_BlueNRG/SimpleBlueNRG_HCI/hci/controller/bluenrg_gap_aci.c: In function 'aci_gap_resolve_private_address_IDB05A1':
+Middlewares/ST/STM32_BlueNRG/SimpleBlueNRG_HCI/hci/controller/bluenrg_gap_aci.c:1175:49: warning: 'sizeof' on array function parameter 'actual_address' will return size of 'uint8_t * {aka unsigned char *}' [-Wsizeof-array-argument]
+   Osal_MemCpy(actual_address, rp.address, sizeof(actual_address));  
+                                                 ^
+Middlewares/ST/STM32_BlueNRG/SimpleBlueNRG_HCI/hci/controller/bluenrg_gap_aci.c:1153:91: note: declared here
+ tBleStatus aci_gap_resolve_private_address_IDB05A1(const tBDAddr private_address, tBDAddr actual_address)
+                                                                                           ^
+Middlewares/ST/STM32_BlueNRG/SimpleBlueNRG_HCI/hci/controller/bluenrg_hal_aci.c: In function 'aci_hal_get_link_status':
+Middlewares/ST/STM32_BlueNRG/SimpleBlueNRG_HCI/hci/controller/bluenrg_hal_aci.c:235:48: warning: 'sizeof' on array function parameter 'link_status' will return size of 'uint8_t * {aka unsigned char *}' [-Wsizeof-array-argument]
+   Osal_MemCpy(link_status,rp.link_status,sizeof(link_status));
+                                                ^
+Middlewares/ST/STM32_BlueNRG/SimpleBlueNRG_HCI/hci/controller/bluenrg_hal_aci.c:218:44: note: declared here
+ tBleStatus aci_hal_get_link_status(uint8_t link_status[8], uint16_t conn_handle[8])
+                                            ^
+Middlewares/ST/STM32_BlueNRG/SimpleBlueNRG_HCI/hci/controller/bluenrg_IFR.c:357:2: warning: #warning BLUENRG_CONFIG not valid [-Wcpp]
+ #warning BLUENRG_CONFIG not valid
+  ^
+Middlewares/ST/STM32_BlueNRG/SimpleBlueNRG_HCI/hci/controller/bluenrg_utils.c: In function 'program_device':
+Middlewares/ST/STM32_BlueNRG/SimpleBlueNRG_HCI/hci/controller/bluenrg_utils.c:102:3: warning: implicit declaration of function 'BlueNRG_HW_Bootloader' [-Wimplicit-function-declaration]
+   BlueNRG_HW_Bootloader();
+   ^
+Middlewares/ST/STM32_BlueNRG/SimpleBlueNRG_HCI/hci/controller/bluenrg_utils.c:146:20: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+       for (j=i; ((j<SECTOR_SIZE+i)&&(j<fw_size)); j += data_size) {
+                    ^
+Middlewares/ST/STM32_BlueNRG/SimpleBlueNRG_HCI/hci/controller/bluenrg_utils.c:183:3: warning: implicit declaration of function 'BlueNRG_RST' [-Wimplicit-function-declaration]
+   BlueNRG_RST();
+   ^
+/local/sdk_elec/gcc-arm-none-eabi-5_2-2015q4/bin/arm-none-eabi-objcopy -O ihex template.elf   template.hex
+/local/sdk_elec/gcc-arm-none-eabi-5_2-2015q4/bin/arm-none-eabi-objcopy -O binary template.elf template.bin
+17:29:01 **** Incremental Build of configuration Default for project stm32f411_base ****
+make all 
+make: Nothing to be done for 'all'.
+17:30:29 **** Incremental Build of configuration Default for project stm32f411_base ****
+make all 
+/local/sdk_elec/gcc-arm-none-eabi-5_2-2015q4/bin/arm-none-eabi-gcc -IMOTENV1/Inc/ -IDrivers/STM32F4xx_HAL_Driver/Inc/ -IDrivers/CMSIS/Device/ST/STM32F4xx/Include/ -IDrivers/CMSIS/Include/ -IDrivers/BSP/STM32F4xx-Nucleo/ -IDrivers/BSP/X-NUCLEO-IDB04A1 -IMiddlewares/ST/STM32_BlueNRG/SimpleBlueNRG_HCI/includes -IMiddlewares/ST/STM32_BlueNRG/Interface -IDrivers/BSP/X-NUCLEO-IDB0xA1 -IDrivers/BSP/X_NUCLEO_IKS01A1 -IDrivers/BSP/X_NUCLEO_IKS01A2 -IMiddlewares/ST/STM32_MetaDataManager -IMiddlewares/ST/STM32_MotionAR_Library/Inc -IMiddlewares/ST/STM32_MotionCP_Library/Inc -IMiddlewares/ST/STM32_MotionFX_Library/Inc -IMiddlewares/ST/STM32_MotionGR_Library/Inc -IMiddlewares/ST/STM32_MotionID_Library/Inc -IMiddlewares/ST/STM32_MotionPM_Library/Inc -IDrivers/BSP/Components/Common -IDrivers/BSP/Components/hts221 -IDrivers/BSP/Components/lis3mdl -IDrivers/BSP/Components/lps22hb -IDrivers/BSP/Components/lps25hb -IDrivers/BSP/Components/lsm303agr -IDrivers/BSP/Components/lsm6ds0 -IDrivers/BSP/Components/lsm6ds3 -IDrivers/BSP/Components/lsm6dsl -IDrivers/BSP/Components/lsm6dsm -IDrivers/BSP/Components/stc3115 -IDrivers/BSP/X_NUCLEO_IKS01A1 -IDrivers/BSP/X_NUCLEO_IKS01A2 -DSTM32F411xE -ggdb -O0 -D ARM_MATH_CM4 -L  -mlittle-endian -mthumb -mcpu=cortex-m4 -mthumb-interwork -Wl,--gc-sections -mfpu=fpv4-sp-d16 -mfloat-abi=hard -fsingle-precision-constant -Wall -Wextra -Warray-bounds -Wno-unused-parameter -TDevice/gcc.ld -mfloat-abi=hard -lc -lgcc -lgcov -lm -Wl,-Map=template.elf.map Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal.c Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc.c Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_gpio.c Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.c Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pcd.c Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pcd_ex.c Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_uart.c Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_usart.c Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_spi.c Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.c Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma_ex.c Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_adc.c Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_adc_ex.c Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim.c Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim_ex.c Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_crc.c Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_i2c.c Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash.c Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ex.c MOTENV1/Src/main.c Drivers/CMSIS/Device/ST/STM32F4xx/Source/Templates/gcc/startup_stm32f411xe.s Drivers/BSP/STM32F4xx-Nucleo/stm32f4xx_nucleo.c MOTENV1/Src/stm32f4xx_hal_msp.c MOTENV1/Src/stm32f4xx_it.c MOTENV1/Src/system_stm32f4xx.c MOTENV1/Src/sensor_service.c MOTENV1/Src/syscalls.c MOTENV1/Src/TargetPlatform.c MOTENV1/Src/drv_uart.c Drivers/BSP/X-NUCLEO-IDB04A1/stm32_bluenrg_ble.c Middlewares/ST/STM32_BlueNRG/SimpleBlueNRG_HCI/hci/hci.c Middlewares/ST/STM32_BlueNRG/SimpleBlueNRG_HCI/hci/controller/bluenrg_gap_aci.c Middlewares/ST/STM32_BlueNRG/SimpleBlueNRG_HCI/hci/controller/bluenrg_gatt_aci.c Middlewares/ST/STM32_BlueNRG/SimpleBlueNRG_HCI/hci/controller/bluenrg_hal_aci.c Middlewares/ST/STM32_BlueNRG/SimpleBlueNRG_HCI/hci/controller/bluenrg_IFR.c Middlewares/ST/STM32_BlueNRG/SimpleBlueNRG_HCI/hci/controller/bluenrg_l2cap_aci.c Middlewares/ST/STM32_BlueNRG/SimpleBlueNRG_HCI/hci/controller/bluenrg_updater_aci.c Middlewares/ST/STM32_BlueNRG/SimpleBlueNRG_HCI/hci/controller/bluenrg_utils.c Middlewares/ST/STM32_BlueNRG/SimpleBlueNRG_HCI/utils/ble_list.c Middlewares/ST/STM32_BlueNRG/SimpleBlueNRG_HCI/utils/gp_timer.c Middlewares/ST/STM32_BlueNRG/SimpleBlueNRG_HCI/utils/osal.c Drivers/BSP/STM32F4xx-Nucleo/stm32f4xx_I2C.c Drivers/BSP/STM32F4xx-Nucleo/stm32f4xx_SPI.c Drivers/BSP/X_NUCLEO_IKS01A1/x_nucleo_iks01a1_humidity.c Drivers/BSP/X_NUCLEO_IKS01A1/x_nucleo_iks01a1_temperature.c Drivers/BSP/X_NUCLEO_IKS01A1/x_nucleo_iks01a1_pressure.c Drivers/BSP/X_NUCLEO_IKS01A1/x_nucleo_iks01a1.c Drivers/BSP/X_NUCLEO_IKS01A2/x_nucleo_iks01a2_humidity.c Drivers/BSP/X_NUCLEO_IKS01A2/x_nucleo_iks01a2_temperature.c Drivers/BSP/X_NUCLEO_IKS01A2/x_nucleo_iks01a2_pressure.c Drivers/BSP/X_NUCLEO_IKS01A2/x_nucleo_iks01a2.c Drivers/BSP/Components/hts221/HTS221_Driver_HL.c Drivers/BSP/Components/hts221/HTS221_Driver.c Drivers/BSP/Components/lps22hb/LPS22HB_Driver_HL.c Drivers/BSP/Components/lps22hb/LPS22HB_Driver.c Drivers/BSP/Components/lps25hb/LPS25HB_Driver_HL.c Drivers/BSP/Components/lps25hb/LPS25HB_Driver.c -o template.elf
+MOTENV1/Src/main.c: In function 'main':
+MOTENV1/Src/main.c:92:6: warning: implicit declaration of function 'setConnectable_2' [-Wimplicit-function-declaration]
+      setConnectable_2();
+      ^
+MOTENV1/Src/main.c: In function 'SendEnvironmentalData':
+MOTENV1/Src/main.c:150:11: warning: unused variable 'Status' [-Wunused-variable]
+   uint8_t Status;
+           ^
+Middlewares/ST/STM32_BlueNRG/SimpleBlueNRG_HCI/hci/controller/bluenrg_gap_aci.c: In function 'aci_gap_set_limited_discoverable':
+Middlewares/ST/STM32_BlueNRG/SimpleBlueNRG_HCI/hci/controller/bluenrg_gap_aci.c:123:40: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+   if ((LocalNameLen+ServiceUUIDLen+14) > sizeof(buffer))
+                                        ^
+Middlewares/ST/STM32_BlueNRG/SimpleBlueNRG_HCI/hci/controller/bluenrg_gap_aci.c: In function 'aci_gap_set_discoverable':
+Middlewares/ST/STM32_BlueNRG/SimpleBlueNRG_HCI/hci/controller/bluenrg_gap_aci.c:186:40: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+   if ((LocalNameLen+ServiceUUIDLen+14) > sizeof(buffer))
+                                        ^
+Middlewares/ST/STM32_BlueNRG/SimpleBlueNRG_HCI/hci/controller/bluenrg_gap_aci.c: In function 'aci_gap_resolve_private_address_IDB05A1':
+Middlewares/ST/STM32_BlueNRG/SimpleBlueNRG_HCI/hci/controller/bluenrg_gap_aci.c:1175:49: warning: 'sizeof' on array function parameter 'actual_address' will return size of 'uint8_t * {aka unsigned char *}' [-Wsizeof-array-argument]
+   Osal_MemCpy(actual_address, rp.address, sizeof(actual_address));  
+                                                 ^
+Middlewares/ST/STM32_BlueNRG/SimpleBlueNRG_HCI/hci/controller/bluenrg_gap_aci.c:1153:91: note: declared here
+ tBleStatus aci_gap_resolve_private_address_IDB05A1(const tBDAddr private_address, tBDAddr actual_address)
+                                                                                           ^
+Middlewares/ST/STM32_BlueNRG/SimpleBlueNRG_HCI/hci/controller/bluenrg_hal_aci.c: In function 'aci_hal_get_link_status':
+Middlewares/ST/STM32_BlueNRG/SimpleBlueNRG_HCI/hci/controller/bluenrg_hal_aci.c:235:48: warning: 'sizeof' on array function parameter 'link_status' will return size of 'uint8_t * {aka unsigned char *}' [-Wsizeof-array-argument]
+   Osal_MemCpy(link_status,rp.link_status,sizeof(link_status));
+                                                ^
+Middlewares/ST/STM32_BlueNRG/SimpleBlueNRG_HCI/hci/controller/bluenrg_hal_aci.c:218:44: note: declared here
+ tBleStatus aci_hal_get_link_status(uint8_t link_status[8], uint16_t conn_handle[8])
+                                            ^
+Middlewares/ST/STM32_BlueNRG/SimpleBlueNRG_HCI/hci/controller/bluenrg_IFR.c:357:2: warning: #warning BLUENRG_CONFIG not valid [-Wcpp]
+ #warning BLUENRG_CONFIG not valid
+  ^
+Middlewares/ST/STM32_BlueNRG/SimpleBlueNRG_HCI/hci/controller/bluenrg_utils.c: In function 'program_device':
+Middlewares/ST/STM32_BlueNRG/SimpleBlueNRG_HCI/hci/controller/bluenrg_utils.c:102:3: warning: implicit declaration of function 'BlueNRG_HW_Bootloader' [-Wimplicit-function-declaration]
+   BlueNRG_HW_Bootloader();
+   ^
+Middlewares/ST/STM32_BlueNRG/SimpleBlueNRG_HCI/hci/controller/bluenrg_utils.c:146:20: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+       for (j=i; ((j<SECTOR_SIZE+i)&&(j<fw_size)); j += data_size) {
+                    ^
+Middlewares/ST/STM32_BlueNRG/SimpleBlueNRG_HCI/hci/controller/bluenrg_utils.c:183:3: warning: implicit declaration of function 'BlueNRG_RST' [-Wimplicit-function-declaration]
+   BlueNRG_RST();
+   ^
+/local/sdk_elec/gcc-arm-none-eabi-5_2-2015q4/bin/arm-none-eabi-objcopy -O ihex template.elf   template.hex
+/local/sdk_elec/gcc-arm-none-eabi-5_2-2015q4/bin/arm-none-eabi-objcopy -O binary template.elf template.bin
+17:30:39 **** Incremental Build of configuration Default for project stm32f411_base ****
+make all 
+make: Nothing to be done for 'all'.
+17:33:01 **** Incremental Build of configuration Default for project stm32f411_base ****
+make all 
+/local/sdk_elec/gcc-arm-none-eabi-5_2-2015q4/bin/arm-none-eabi-gcc -IMOTENV1/Inc/ -IDrivers/STM32F4xx_HAL_Driver/Inc/ -IDrivers/CMSIS/Device/ST/STM32F4xx/Include/ -IDrivers/CMSIS/Include/ -IDrivers/BSP/STM32F4xx-Nucleo/ -IDrivers/BSP/X-NUCLEO-IDB04A1 -IMiddlewares/ST/STM32_BlueNRG/SimpleBlueNRG_HCI/includes -IMiddlewares/ST/STM32_BlueNRG/Interface -IDrivers/BSP/X-NUCLEO-IDB0xA1 -IDrivers/BSP/X_NUCLEO_IKS01A1 -IDrivers/BSP/X_NUCLEO_IKS01A2 -IMiddlewares/ST/STM32_MetaDataManager -IMiddlewares/ST/STM32_MotionAR_Library/Inc -IMiddlewares/ST/STM32_MotionCP_Library/Inc -IMiddlewares/ST/STM32_MotionFX_Library/Inc -IMiddlewares/ST/STM32_MotionGR_Library/Inc -IMiddlewares/ST/STM32_MotionID_Library/Inc -IMiddlewares/ST/STM32_MotionPM_Library/Inc -IDrivers/BSP/Components/Common -IDrivers/BSP/Components/hts221 -IDrivers/BSP/Components/lis3mdl -IDrivers/BSP/Components/lps22hb -IDrivers/BSP/Components/lps25hb -IDrivers/BSP/Components/lsm303agr -IDrivers/BSP/Components/lsm6ds0 -IDrivers/BSP/Components/lsm6ds3 -IDrivers/BSP/Components/lsm6dsl -IDrivers/BSP/Components/lsm6dsm -IDrivers/BSP/Components/stc3115 -IDrivers/BSP/X_NUCLEO_IKS01A1 -IDrivers/BSP/X_NUCLEO_IKS01A2 -DSTM32F411xE -ggdb -O0 -D ARM_MATH_CM4 -L  -mlittle-endian -mthumb -mcpu=cortex-m4 -mthumb-interwork -Wl,--gc-sections -mfpu=fpv4-sp-d16 -mfloat-abi=hard -fsingle-precision-constant -Wall -Wextra -Warray-bounds -Wno-unused-parameter -TDevice/gcc.ld -mfloat-abi=hard -lc -lgcc -lgcov -lm -Wl,-Map=template.elf.map Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal.c Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc.c Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_gpio.c Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.c Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pcd.c Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pcd_ex.c Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_uart.c Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_usart.c Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_spi.c Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.c Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma_ex.c Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_adc.c Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_adc_ex.c Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim.c Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim_ex.c Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_crc.c Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_i2c.c Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash.c Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ex.c MOTENV1/Src/main.c Drivers/CMSIS/Device/ST/STM32F4xx/Source/Templates/gcc/startup_stm32f411xe.s Drivers/BSP/STM32F4xx-Nucleo/stm32f4xx_nucleo.c MOTENV1/Src/stm32f4xx_hal_msp.c MOTENV1/Src/stm32f4xx_it.c MOTENV1/Src/system_stm32f4xx.c MOTENV1/Src/sensor_service.c MOTENV1/Src/syscalls.c MOTENV1/Src/TargetPlatform.c MOTENV1/Src/drv_uart.c Drivers/BSP/X-NUCLEO-IDB04A1/stm32_bluenrg_ble.c Middlewares/ST/STM32_BlueNRG/SimpleBlueNRG_HCI/hci/hci.c Middlewares/ST/STM32_BlueNRG/SimpleBlueNRG_HCI/hci/controller/bluenrg_gap_aci.c Middlewares/ST/STM32_BlueNRG/SimpleBlueNRG_HCI/hci/controller/bluenrg_gatt_aci.c Middlewares/ST/STM32_BlueNRG/SimpleBlueNRG_HCI/hci/controller/bluenrg_hal_aci.c Middlewares/ST/STM32_BlueNRG/SimpleBlueNRG_HCI/hci/controller/bluenrg_IFR.c Middlewares/ST/STM32_BlueNRG/SimpleBlueNRG_HCI/hci/controller/bluenrg_l2cap_aci.c Middlewares/ST/STM32_BlueNRG/SimpleBlueNRG_HCI/hci/controller/bluenrg_updater_aci.c Middlewares/ST/STM32_BlueNRG/SimpleBlueNRG_HCI/hci/controller/bluenrg_utils.c Middlewares/ST/STM32_BlueNRG/SimpleBlueNRG_HCI/utils/ble_list.c Middlewares/ST/STM32_BlueNRG/SimpleBlueNRG_HCI/utils/gp_timer.c Middlewares/ST/STM32_BlueNRG/SimpleBlueNRG_HCI/utils/osal.c Drivers/BSP/STM32F4xx-Nucleo/stm32f4xx_I2C.c Drivers/BSP/STM32F4xx-Nucleo/stm32f4xx_SPI.c Drivers/BSP/X_NUCLEO_IKS01A1/x_nucleo_iks01a1_humidity.c Drivers/BSP/X_NUCLEO_IKS01A1/x_nucleo_iks01a1_temperature.c Drivers/BSP/X_NUCLEO_IKS01A1/x_nucleo_iks01a1_pressure.c Drivers/BSP/X_NUCLEO_IKS01A1/x_nucleo_iks01a1.c Drivers/BSP/X_NUCLEO_IKS01A2/x_nucleo_iks01a2_humidity.c Drivers/BSP/X_NUCLEO_IKS01A2/x_nucleo_iks01a2_temperature.c Drivers/BSP/X_NUCLEO_IKS01A2/x_nucleo_iks01a2_pressure.c Drivers/BSP/X_NUCLEO_IKS01A2/x_nucleo_iks01a2.c Drivers/BSP/Components/hts221/HTS221_Driver_HL.c Drivers/BSP/Components/hts221/HTS221_Driver.c Drivers/BSP/Components/lps22hb/LPS22HB_Driver_HL.c Drivers/BSP/Components/lps22hb/LPS22HB_Driver.c Drivers/BSP/Components/lps25hb/LPS25HB_Driver_HL.c Drivers/BSP/Components/lps25hb/LPS25HB_Driver.c -o template.elf
+MOTENV1/Src/main.c: In function 'main':
+MOTENV1/Src/main.c:92:6: warning: implicit declaration of function 'setConnectable_2' [-Wimplicit-function-declaration]
+      setConnectable_2();
+      ^
+MOTENV1/Src/main.c: In function 'SendEnvironmentalData':
+MOTENV1/Src/main.c:150:11: warning: unused variable 'Status' [-Wunused-variable]
+   uint8_t Status;
+           ^
+Middlewares/ST/STM32_BlueNRG/SimpleBlueNRG_HCI/hci/controller/bluenrg_gap_aci.c: In function 'aci_gap_set_limited_discoverable':
+Middlewares/ST/STM32_BlueNRG/SimpleBlueNRG_HCI/hci/controller/bluenrg_gap_aci.c:123:40: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+   if ((LocalNameLen+ServiceUUIDLen+14) > sizeof(buffer))
+                                        ^
+Middlewares/ST/STM32_BlueNRG/SimpleBlueNRG_HCI/hci/controller/bluenrg_gap_aci.c: In function 'aci_gap_set_discoverable':
+Middlewares/ST/STM32_BlueNRG/SimpleBlueNRG_HCI/hci/controller/bluenrg_gap_aci.c:186:40: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+   if ((LocalNameLen+ServiceUUIDLen+14) > sizeof(buffer))
+                                        ^
+Middlewares/ST/STM32_BlueNRG/SimpleBlueNRG_HCI/hci/controller/bluenrg_gap_aci.c: In function 'aci_gap_resolve_private_address_IDB05A1':
+Middlewares/ST/STM32_BlueNRG/SimpleBlueNRG_HCI/hci/controller/bluenrg_gap_aci.c:1175:49: warning: 'sizeof' on array function parameter 'actual_address' will return size of 'uint8_t * {aka unsigned char *}' [-Wsizeof-array-argument]
+   Osal_MemCpy(actual_address, rp.address, sizeof(actual_address));  
+                                                 ^
+Middlewares/ST/STM32_BlueNRG/SimpleBlueNRG_HCI/hci/controller/bluenrg_gap_aci.c:1153:91: note: declared here
+ tBleStatus aci_gap_resolve_private_address_IDB05A1(const tBDAddr private_address, tBDAddr actual_address)
+                                                                                           ^
+Middlewares/ST/STM32_BlueNRG/SimpleBlueNRG_HCI/hci/controller/bluenrg_hal_aci.c: In function 'aci_hal_get_link_status':
+Middlewares/ST/STM32_BlueNRG/SimpleBlueNRG_HCI/hci/controller/bluenrg_hal_aci.c:235:48: warning: 'sizeof' on array function parameter 'link_status' will return size of 'uint8_t * {aka unsigned char *}' [-Wsizeof-array-argument]
+   Osal_MemCpy(link_status,rp.link_status,sizeof(link_status));
+                                                ^
+Middlewares/ST/STM32_BlueNRG/SimpleBlueNRG_HCI/hci/controller/bluenrg_hal_aci.c:218:44: note: declared here
+ tBleStatus aci_hal_get_link_status(uint8_t link_status[8], uint16_t conn_handle[8])
+                                            ^
+Middlewares/ST/STM32_BlueNRG/SimpleBlueNRG_HCI/hci/controller/bluenrg_IFR.c:357:2: warning: #warning BLUENRG_CONFIG not valid [-Wcpp]
+ #warning BLUENRG_CONFIG not valid
+  ^
+Middlewares/ST/STM32_BlueNRG/SimpleBlueNRG_HCI/hci/controller/bluenrg_utils.c: In function 'program_device':
+Middlewares/ST/STM32_BlueNRG/SimpleBlueNRG_HCI/hci/controller/bluenrg_utils.c:102:3: warning: implicit declaration of function 'BlueNRG_HW_Bootloader' [-Wimplicit-function-declaration]
+   BlueNRG_HW_Bootloader();
+   ^
+Middlewares/ST/STM32_BlueNRG/SimpleBlueNRG_HCI/hci/controller/bluenrg_utils.c:146:20: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+       for (j=i; ((j<SECTOR_SIZE+i)&&(j<fw_size)); j += data_size) {
+                    ^
+Middlewares/ST/STM32_BlueNRG/SimpleBlueNRG_HCI/hci/controller/bluenrg_utils.c:183:3: warning: implicit declaration of function 'BlueNRG_RST' [-Wimplicit-function-declaration]
+   BlueNRG_RST();
+   ^
+/local/sdk_elec/gcc-arm-none-eabi-5_2-2015q4/bin/arm-none-eabi-objcopy -O ihex template.elf   template.hex
+/local/sdk_elec/gcc-arm-none-eabi-5_2-2015q4/bin/arm-none-eabi-objcopy -O binary template.elf template.bin
+17:33:15 **** Incremental Build of configuration Default for project stm32f411_base ****
+make all 
+make: Nothing to be done for 'all'.
+17:33:55 **** Incremental Build of configuration Default for project stm32f411_base ****
+make all 
+make: Nothing to be done for 'all'.
+17:35:41 **** Incremental Build of configuration Default for project stm32f411_base ****
+make all 
+make: Nothing to be done for 'all'.
+17:36:09 **** Incremental Build of configuration Default for project stm32f411_base ****
+make all 
+make: Nothing to be done for 'all'.
+17:40:32 **** Incremental Build of configuration Default for project stm32f411_base ****
+make all 
+/local/sdk_elec/gcc-arm-none-eabi-5_2-2015q4/bin/arm-none-eabi-gcc -IMOTENV1/Inc/ -IDrivers/STM32F4xx_HAL_Driver/Inc/ -IDrivers/CMSIS/Device/ST/STM32F4xx/Include/ -IDrivers/CMSIS/Include/ -IDrivers/BSP/STM32F4xx-Nucleo/ -IDrivers/BSP/X-NUCLEO-IDB04A1 -IMiddlewares/ST/STM32_BlueNRG/SimpleBlueNRG_HCI/includes -IMiddlewares/ST/STM32_BlueNRG/Interface -IDrivers/BSP/X-NUCLEO-IDB0xA1 -IDrivers/BSP/X_NUCLEO_IKS01A1 -IDrivers/BSP/X_NUCLEO_IKS01A2 -IMiddlewares/ST/STM32_MetaDataManager -IMiddlewares/ST/STM32_MotionAR_Library/Inc -IMiddlewares/ST/STM32_MotionCP_Library/Inc -IMiddlewares/ST/STM32_MotionFX_Library/Inc -IMiddlewares/ST/STM32_MotionGR_Library/Inc -IMiddlewares/ST/STM32_MotionID_Library/Inc -IMiddlewares/ST/STM32_MotionPM_Library/Inc -IDrivers/BSP/Components/Common -IDrivers/BSP/Components/hts221 -IDrivers/BSP/Components/lis3mdl -IDrivers/BSP/Components/lps22hb -IDrivers/BSP/Components/lps25hb -IDrivers/BSP/Components/lsm303agr -IDrivers/BSP/Components/lsm6ds0 -IDrivers/BSP/Components/lsm6ds3 -IDrivers/BSP/Components/lsm6dsl -IDrivers/BSP/Components/lsm6dsm -IDrivers/BSP/Components/stc3115 -IDrivers/BSP/X_NUCLEO_IKS01A1 -IDrivers/BSP/X_NUCLEO_IKS01A2 -DSTM32F411xE -ggdb -O0 -D ARM_MATH_CM4 -L  -mlittle-endian -mthumb -mcpu=cortex-m4 -mthumb-interwork -Wl,--gc-sections -mfpu=fpv4-sp-d16 -mfloat-abi=hard -fsingle-precision-constant -Wall -Wextra -Warray-bounds -Wno-unused-parameter -TDevice/gcc.ld -mfloat-abi=hard -lc -lgcc -lgcov -lm -Wl,-Map=template.elf.map Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal.c Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc.c Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_gpio.c Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.c Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pcd.c Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pcd_ex.c Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_uart.c Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_usart.c Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_spi.c Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.c Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma_ex.c Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_adc.c Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_adc_ex.c Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim.c Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim_ex.c Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_crc.c Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_i2c.c Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash.c Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ex.c MOTENV1/Src/main.c Drivers/CMSIS/Device/ST/STM32F4xx/Source/Templates/gcc/startup_stm32f411xe.s Drivers/BSP/STM32F4xx-Nucleo/stm32f4xx_nucleo.c MOTENV1/Src/stm32f4xx_hal_msp.c MOTENV1/Src/stm32f4xx_it.c MOTENV1/Src/system_stm32f4xx.c MOTENV1/Src/sensor_service.c MOTENV1/Src/syscalls.c MOTENV1/Src/TargetPlatform.c MOTENV1/Src/drv_uart.c Drivers/BSP/X-NUCLEO-IDB04A1/stm32_bluenrg_ble.c Middlewares/ST/STM32_BlueNRG/SimpleBlueNRG_HCI/hci/hci.c Middlewares/ST/STM32_BlueNRG/SimpleBlueNRG_HCI/hci/controller/bluenrg_gap_aci.c Middlewares/ST/STM32_BlueNRG/SimpleBlueNRG_HCI/hci/controller/bluenrg_gatt_aci.c Middlewares/ST/STM32_BlueNRG/SimpleBlueNRG_HCI/hci/controller/bluenrg_hal_aci.c Middlewares/ST/STM32_BlueNRG/SimpleBlueNRG_HCI/hci/controller/bluenrg_IFR.c Middlewares/ST/STM32_BlueNRG/SimpleBlueNRG_HCI/hci/controller/bluenrg_l2cap_aci.c Middlewares/ST/STM32_BlueNRG/SimpleBlueNRG_HCI/hci/controller/bluenrg_updater_aci.c Middlewares/ST/STM32_BlueNRG/SimpleBlueNRG_HCI/hci/controller/bluenrg_utils.c Middlewares/ST/STM32_BlueNRG/SimpleBlueNRG_HCI/utils/ble_list.c Middlewares/ST/STM32_BlueNRG/SimpleBlueNRG_HCI/utils/gp_timer.c Middlewares/ST/STM32_BlueNRG/SimpleBlueNRG_HCI/utils/osal.c Drivers/BSP/STM32F4xx-Nucleo/stm32f4xx_I2C.c Drivers/BSP/STM32F4xx-Nucleo/stm32f4xx_SPI.c Drivers/BSP/X_NUCLEO_IKS01A1/x_nucleo_iks01a1_humidity.c Drivers/BSP/X_NUCLEO_IKS01A1/x_nucleo_iks01a1_temperature.c Drivers/BSP/X_NUCLEO_IKS01A1/x_nucleo_iks01a1_pressure.c Drivers/BSP/X_NUCLEO_IKS01A1/x_nucleo_iks01a1.c Drivers/BSP/X_NUCLEO_IKS01A2/x_nucleo_iks01a2_humidity.c Drivers/BSP/X_NUCLEO_IKS01A2/x_nucleo_iks01a2_temperature.c Drivers/BSP/X_NUCLEO_IKS01A2/x_nucleo_iks01a2_pressure.c Drivers/BSP/X_NUCLEO_IKS01A2/x_nucleo_iks01a2.c Drivers/BSP/Components/hts221/HTS221_Driver_HL.c Drivers/BSP/Components/hts221/HTS221_Driver.c Drivers/BSP/Components/lps22hb/LPS22HB_Driver_HL.c Drivers/BSP/Components/lps22hb/LPS22HB_Driver.c Drivers/BSP/Components/lps25hb/LPS25HB_Driver_HL.c Drivers/BSP/Components/lps25hb/LPS25HB_Driver.c -o template.elf
+MOTENV1/Src/main.c: In function 'main':
+MOTENV1/Src/main.c:92:6: warning: implicit declaration of function 'setConnectable_2' [-Wimplicit-function-declaration]
+      setConnectable_2();
+      ^
+MOTENV1/Src/main.c: In function 'SendEnvironmentalData':
+MOTENV1/Src/main.c:150:11: warning: unused variable 'Status' [-Wunused-variable]
+   uint8_t Status;
+           ^
+MOTENV1/Src/main.c: In function 'Init_BlueNRG_Stack':
+MOTENV1/Src/main.c:276:10: warning: unused variable 'SERVER_BDADDR' [-Wunused-variable]
+  uint8_t SERVER_BDADDR[] = {0xaa, 0x00, 0x00, 0xE1, 0x80, 0x02};
+          ^
+Middlewares/ST/STM32_BlueNRG/SimpleBlueNRG_HCI/hci/controller/bluenrg_gap_aci.c: In function 'aci_gap_set_limited_discoverable':
+Middlewares/ST/STM32_BlueNRG/SimpleBlueNRG_HCI/hci/controller/bluenrg_gap_aci.c:123:40: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+   if ((LocalNameLen+ServiceUUIDLen+14) > sizeof(buffer))
+                                        ^
+Middlewares/ST/STM32_BlueNRG/SimpleBlueNRG_HCI/hci/controller/bluenrg_gap_aci.c: In function 'aci_gap_set_discoverable':
+Middlewares/ST/STM32_BlueNRG/SimpleBlueNRG_HCI/hci/controller/bluenrg_gap_aci.c:186:40: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+   if ((LocalNameLen+ServiceUUIDLen+14) > sizeof(buffer))
+                                        ^
+Middlewares/ST/STM32_BlueNRG/SimpleBlueNRG_HCI/hci/controller/bluenrg_gap_aci.c: In function 'aci_gap_resolve_private_address_IDB05A1':
+Middlewares/ST/STM32_BlueNRG/SimpleBlueNRG_HCI/hci/controller/bluenrg_gap_aci.c:1175:49: warning: 'sizeof' on array function parameter 'actual_address' will return size of 'uint8_t * {aka unsigned char *}' [-Wsizeof-array-argument]
+   Osal_MemCpy(actual_address, rp.address, sizeof(actual_address));  
+                                                 ^
+Middlewares/ST/STM32_BlueNRG/SimpleBlueNRG_HCI/hci/controller/bluenrg_gap_aci.c:1153:91: note: declared here
+ tBleStatus aci_gap_resolve_private_address_IDB05A1(const tBDAddr private_address, tBDAddr actual_address)
+                                                                                           ^
+Middlewares/ST/STM32_BlueNRG/SimpleBlueNRG_HCI/hci/controller/bluenrg_hal_aci.c: In function 'aci_hal_get_link_status':
+Middlewares/ST/STM32_BlueNRG/SimpleBlueNRG_HCI/hci/controller/bluenrg_hal_aci.c:235:48: warning: 'sizeof' on array function parameter 'link_status' will return size of 'uint8_t * {aka unsigned char *}' [-Wsizeof-array-argument]
+   Osal_MemCpy(link_status,rp.link_status,sizeof(link_status));
+                                                ^
+Middlewares/ST/STM32_BlueNRG/SimpleBlueNRG_HCI/hci/controller/bluenrg_hal_aci.c:218:44: note: declared here
+ tBleStatus aci_hal_get_link_status(uint8_t link_status[8], uint16_t conn_handle[8])
+                                            ^
+Middlewares/ST/STM32_BlueNRG/SimpleBlueNRG_HCI/hci/controller/bluenrg_IFR.c:357:2: warning: #warning BLUENRG_CONFIG not valid [-Wcpp]
+ #warning BLUENRG_CONFIG not valid
+  ^
+Middlewares/ST/STM32_BlueNRG/SimpleBlueNRG_HCI/hci/controller/bluenrg_utils.c: In function 'program_device':
+Middlewares/ST/STM32_BlueNRG/SimpleBlueNRG_HCI/hci/controller/bluenrg_utils.c:102:3: warning: implicit declaration of function 'BlueNRG_HW_Bootloader' [-Wimplicit-function-declaration]
+   BlueNRG_HW_Bootloader();
+   ^
+Middlewares/ST/STM32_BlueNRG/SimpleBlueNRG_HCI/hci/controller/bluenrg_utils.c:146:20: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+       for (j=i; ((j<SECTOR_SIZE+i)&&(j<fw_size)); j += data_size) {
+                    ^
+Middlewares/ST/STM32_BlueNRG/SimpleBlueNRG_HCI/hci/controller/bluenrg_utils.c:183:3: warning: implicit declaration of function 'BlueNRG_RST' [-Wimplicit-function-declaration]
+   BlueNRG_RST();
+   ^
+/local/sdk_elec/gcc-arm-none-eabi-5_2-2015q4/bin/arm-none-eabi-objcopy -O ihex template.elf   template.hex
+/local/sdk_elec/gcc-arm-none-eabi-5_2-2015q4/bin/arm-none-eabi-objcopy -O binary template.elf template.bin
+17:40:53 **** Incremental Build of configuration Default for project stm32f411_base ****
+make all 
+make: Nothing to be done for 'all'.
+17:42:03 **** Incremental Build of configuration Default for project stm32f411_base ****
+make all 
+/local/sdk_elec/gcc-arm-none-eabi-5_2-2015q4/bin/arm-none-eabi-gcc -IMOTENV1/Inc/ -IDrivers/STM32F4xx_HAL_Driver/Inc/ -IDrivers/CMSIS/Device/ST/STM32F4xx/Include/ -IDrivers/CMSIS/Include/ -IDrivers/BSP/STM32F4xx-Nucleo/ -IDrivers/BSP/X-NUCLEO-IDB04A1 -IMiddlewares/ST/STM32_BlueNRG/SimpleBlueNRG_HCI/includes -IMiddlewares/ST/STM32_BlueNRG/Interface -IDrivers/BSP/X-NUCLEO-IDB0xA1 -IDrivers/BSP/X_NUCLEO_IKS01A1 -IDrivers/BSP/X_NUCLEO_IKS01A2 -IMiddlewares/ST/STM32_MetaDataManager -IMiddlewares/ST/STM32_MotionAR_Library/Inc -IMiddlewares/ST/STM32_MotionCP_Library/Inc -IMiddlewares/ST/STM32_MotionFX_Library/Inc -IMiddlewares/ST/STM32_MotionGR_Library/Inc -IMiddlewares/ST/STM32_MotionID_Library/Inc -IMiddlewares/ST/STM32_MotionPM_Library/Inc -IDrivers/BSP/Components/Common -IDrivers/BSP/Components/hts221 -IDrivers/BSP/Components/lis3mdl -IDrivers/BSP/Components/lps22hb -IDrivers/BSP/Components/lps25hb -IDrivers/BSP/Components/lsm303agr -IDrivers/BSP/Components/lsm6ds0 -IDrivers/BSP/Components/lsm6ds3 -IDrivers/BSP/Components/lsm6dsl -IDrivers/BSP/Components/lsm6dsm -IDrivers/BSP/Components/stc3115 -IDrivers/BSP/X_NUCLEO_IKS01A1 -IDrivers/BSP/X_NUCLEO_IKS01A2 -DSTM32F411xE -ggdb -O0 -D ARM_MATH_CM4 -L  -mlittle-endian -mthumb -mcpu=cortex-m4 -mthumb-interwork -Wl,--gc-sections -mfpu=fpv4-sp-d16 -mfloat-abi=hard -fsingle-precision-constant -Wall -Wextra -Warray-bounds -Wno-unused-parameter -TDevice/gcc.ld -mfloat-abi=hard -lc -lgcc -lgcov -lm -Wl,-Map=template.elf.map Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal.c Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc.c Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_gpio.c Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.c Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pcd.c Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pcd_ex.c Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_uart.c Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_usart.c Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_spi.c Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.c Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma_ex.c Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_adc.c Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_adc_ex.c Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim.c Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim_ex.c Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_crc.c Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_i2c.c Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash.c Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ex.c MOTENV1/Src/main.c Drivers/CMSIS/Device/ST/STM32F4xx/Source/Templates/gcc/startup_stm32f411xe.s Drivers/BSP/STM32F4xx-Nucleo/stm32f4xx_nucleo.c MOTENV1/Src/stm32f4xx_hal_msp.c MOTENV1/Src/stm32f4xx_it.c MOTENV1/Src/system_stm32f4xx.c MOTENV1/Src/sensor_service.c MOTENV1/Src/syscalls.c MOTENV1/Src/TargetPlatform.c MOTENV1/Src/drv_uart.c Drivers/BSP/X-NUCLEO-IDB04A1/stm32_bluenrg_ble.c Middlewares/ST/STM32_BlueNRG/SimpleBlueNRG_HCI/hci/hci.c Middlewares/ST/STM32_BlueNRG/SimpleBlueNRG_HCI/hci/controller/bluenrg_gap_aci.c Middlewares/ST/STM32_BlueNRG/SimpleBlueNRG_HCI/hci/controller/bluenrg_gatt_aci.c Middlewares/ST/STM32_BlueNRG/SimpleBlueNRG_HCI/hci/controller/bluenrg_hal_aci.c Middlewares/ST/STM32_BlueNRG/SimpleBlueNRG_HCI/hci/controller/bluenrg_IFR.c Middlewares/ST/STM32_BlueNRG/SimpleBlueNRG_HCI/hci/controller/bluenrg_l2cap_aci.c Middlewares/ST/STM32_BlueNRG/SimpleBlueNRG_HCI/hci/controller/bluenrg_updater_aci.c Middlewares/ST/STM32_BlueNRG/SimpleBlueNRG_HCI/hci/controller/bluenrg_utils.c Middlewares/ST/STM32_BlueNRG/SimpleBlueNRG_HCI/utils/ble_list.c Middlewares/ST/STM32_BlueNRG/SimpleBlueNRG_HCI/utils/gp_timer.c Middlewares/ST/STM32_BlueNRG/SimpleBlueNRG_HCI/utils/osal.c Drivers/BSP/STM32F4xx-Nucleo/stm32f4xx_I2C.c Drivers/BSP/STM32F4xx-Nucleo/stm32f4xx_SPI.c Drivers/BSP/X_NUCLEO_IKS01A1/x_nucleo_iks01a1_humidity.c Drivers/BSP/X_NUCLEO_IKS01A1/x_nucleo_iks01a1_temperature.c Drivers/BSP/X_NUCLEO_IKS01A1/x_nucleo_iks01a1_pressure.c Drivers/BSP/X_NUCLEO_IKS01A1/x_nucleo_iks01a1.c Drivers/BSP/X_NUCLEO_IKS01A2/x_nucleo_iks01a2_humidity.c Drivers/BSP/X_NUCLEO_IKS01A2/x_nucleo_iks01a2_temperature.c Drivers/BSP/X_NUCLEO_IKS01A2/x_nucleo_iks01a2_pressure.c Drivers/BSP/X_NUCLEO_IKS01A2/x_nucleo_iks01a2.c Drivers/BSP/Components/hts221/HTS221_Driver_HL.c Drivers/BSP/Components/hts221/HTS221_Driver.c Drivers/BSP/Components/lps22hb/LPS22HB_Driver_HL.c Drivers/BSP/Components/lps22hb/LPS22HB_Driver.c Drivers/BSP/Components/lps25hb/LPS25HB_Driver_HL.c Drivers/BSP/Components/lps25hb/LPS25HB_Driver.c -o template.elf
+MOTENV1/Src/main.c: In function 'main':
+MOTENV1/Src/main.c:92:6: warning: implicit declaration of function 'setConnectable_2' [-Wimplicit-function-declaration]
+      setConnectable_2();
+      ^
+MOTENV1/Src/main.c: In function 'SendEnvironmentalData':
+MOTENV1/Src/main.c:150:11: warning: unused variable 'Status' [-Wunused-variable]
+   uint8_t Status;
+           ^
+MOTENV1/Src/main.c: In function 'Init_BlueNRG_Stack':
+MOTENV1/Src/main.c:276:10: warning: unused variable 'SERVER_BDADDR' [-Wunused-variable]
+  uint8_t SERVER_BDADDR[] = {0xaa, 0x00, 0x00, 0xE1, 0x80, 0x02};
+          ^
+Middlewares/ST/STM32_BlueNRG/SimpleBlueNRG_HCI/hci/controller/bluenrg_gap_aci.c: In function 'aci_gap_set_limited_discoverable':
+Middlewares/ST/STM32_BlueNRG/SimpleBlueNRG_HCI/hci/controller/bluenrg_gap_aci.c:123:40: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+   if ((LocalNameLen+ServiceUUIDLen+14) > sizeof(buffer))
+                                        ^
+Middlewares/ST/STM32_BlueNRG/SimpleBlueNRG_HCI/hci/controller/bluenrg_gap_aci.c: In function 'aci_gap_set_discoverable':
+Middlewares/ST/STM32_BlueNRG/SimpleBlueNRG_HCI/hci/controller/bluenrg_gap_aci.c:186:40: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+   if ((LocalNameLen+ServiceUUIDLen+14) > sizeof(buffer))
+                                        ^
+Middlewares/ST/STM32_BlueNRG/SimpleBlueNRG_HCI/hci/controller/bluenrg_gap_aci.c: In function 'aci_gap_resolve_private_address_IDB05A1':
+Middlewares/ST/STM32_BlueNRG/SimpleBlueNRG_HCI/hci/controller/bluenrg_gap_aci.c:1175:49: warning: 'sizeof' on array function parameter 'actual_address' will return size of 'uint8_t * {aka unsigned char *}' [-Wsizeof-array-argument]
+   Osal_MemCpy(actual_address, rp.address, sizeof(actual_address));  
+                                                 ^
+Middlewares/ST/STM32_BlueNRG/SimpleBlueNRG_HCI/hci/controller/bluenrg_gap_aci.c:1153:91: note: declared here
+ tBleStatus aci_gap_resolve_private_address_IDB05A1(const tBDAddr private_address, tBDAddr actual_address)
+                                                                                           ^
+Middlewares/ST/STM32_BlueNRG/SimpleBlueNRG_HCI/hci/controller/bluenrg_hal_aci.c: In function 'aci_hal_get_link_status':
+Middlewares/ST/STM32_BlueNRG/SimpleBlueNRG_HCI/hci/controller/bluenrg_hal_aci.c:235:48: warning: 'sizeof' on array function parameter 'link_status' will return size of 'uint8_t * {aka unsigned char *}' [-Wsizeof-array-argument]
+   Osal_MemCpy(link_status,rp.link_status,sizeof(link_status));
+                                                ^
+Middlewares/ST/STM32_BlueNRG/SimpleBlueNRG_HCI/hci/controller/bluenrg_hal_aci.c:218:44: note: declared here
+ tBleStatus aci_hal_get_link_status(uint8_t link_status[8], uint16_t conn_handle[8])
+                                            ^
+Middlewares/ST/STM32_BlueNRG/SimpleBlueNRG_HCI/hci/controller/bluenrg_IFR.c:357:2: warning: #warning BLUENRG_CONFIG not valid [-Wcpp]
+ #warning BLUENRG_CONFIG not valid
+  ^
+Middlewares/ST/STM32_BlueNRG/SimpleBlueNRG_HCI/hci/controller/bluenrg_utils.c: In function 'program_device':
+Middlewares/ST/STM32_BlueNRG/SimpleBlueNRG_HCI/hci/controller/bluenrg_utils.c:102:3: warning: implicit declaration of function 'BlueNRG_HW_Bootloader' [-Wimplicit-function-declaration]
+   BlueNRG_HW_Bootloader();
+   ^
+Middlewares/ST/STM32_BlueNRG/SimpleBlueNRG_HCI/hci/controller/bluenrg_utils.c:146:20: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+       for (j=i; ((j<SECTOR_SIZE+i)&&(j<fw_size)); j += data_size) {
+                    ^
+Middlewares/ST/STM32_BlueNRG/SimpleBlueNRG_HCI/hci/controller/bluenrg_utils.c:183:3: warning: implicit declaration of function 'BlueNRG_RST' [-Wimplicit-function-declaration]
+   BlueNRG_RST();
+   ^
+/local/sdk_elec/gcc-arm-none-eabi-5_2-2015q4/bin/arm-none-eabi-objcopy -O ihex template.elf   template.hex
+/local/sdk_elec/gcc-arm-none-eabi-5_2-2015q4/bin/arm-none-eabi-objcopy -O binary template.elf template.bin
+17:42:18 **** Incremental Build of configuration Default for project stm32f411_base ****
+make all 
+make: Nothing to be done for 'all'.
+17:44:52 **** Incremental Build of configuration Default for project stm32f411_base ****
+make all 
+/local/sdk_elec/gcc-arm-none-eabi-5_2-2015q4/bin/arm-none-eabi-gcc -IMOTENV1/Inc/ -IDrivers/STM32F4xx_HAL_Driver/Inc/ -IDrivers/CMSIS/Device/ST/STM32F4xx/Include/ -IDrivers/CMSIS/Include/ -IDrivers/BSP/STM32F4xx-Nucleo/ -IDrivers/BSP/X-NUCLEO-IDB04A1 -IMiddlewares/ST/STM32_BlueNRG/SimpleBlueNRG_HCI/includes -IMiddlewares/ST/STM32_BlueNRG/Interface -IDrivers/BSP/X-NUCLEO-IDB0xA1 -IDrivers/BSP/X_NUCLEO_IKS01A1 -IDrivers/BSP/X_NUCLEO_IKS01A2 -IMiddlewares/ST/STM32_MetaDataManager -IMiddlewares/ST/STM32_MotionAR_Library/Inc -IMiddlewares/ST/STM32_MotionCP_Library/Inc -IMiddlewares/ST/STM32_MotionFX_Library/Inc -IMiddlewares/ST/STM32_MotionGR_Library/Inc -IMiddlewares/ST/STM32_MotionID_Library/Inc -IMiddlewares/ST/STM32_MotionPM_Library/Inc -IDrivers/BSP/Components/Common -IDrivers/BSP/Components/hts221 -IDrivers/BSP/Components/lis3mdl -IDrivers/BSP/Components/lps22hb -IDrivers/BSP/Components/lps25hb -IDrivers/BSP/Components/lsm303agr -IDrivers/BSP/Components/lsm6ds0 -IDrivers/BSP/Components/lsm6ds3 -IDrivers/BSP/Components/lsm6dsl -IDrivers/BSP/Components/lsm6dsm -IDrivers/BSP/Components/stc3115 -IDrivers/BSP/X_NUCLEO_IKS01A1 -IDrivers/BSP/X_NUCLEO_IKS01A2 -DSTM32F411xE -ggdb -O0 -D ARM_MATH_CM4 -L  -mlittle-endian -mthumb -mcpu=cortex-m4 -mthumb-interwork -Wl,--gc-sections -mfpu=fpv4-sp-d16 -mfloat-abi=hard -fsingle-precision-constant -Wall -Wextra -Warray-bounds -Wno-unused-parameter -TDevice/gcc.ld -mfloat-abi=hard -lc -lgcc -lgcov -lm -Wl,-Map=template.elf.map Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal.c Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc.c Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_gpio.c Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.c Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pcd.c Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pcd_ex.c Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_uart.c Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_usart.c Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_spi.c Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.c Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma_ex.c Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_adc.c Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_adc_ex.c Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim.c Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim_ex.c Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_crc.c Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_i2c.c Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash.c Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ex.c MOTENV1/Src/main.c Drivers/CMSIS/Device/ST/STM32F4xx/Source/Templates/gcc/startup_stm32f411xe.s Drivers/BSP/STM32F4xx-Nucleo/stm32f4xx_nucleo.c MOTENV1/Src/stm32f4xx_hal_msp.c MOTENV1/Src/stm32f4xx_it.c MOTENV1/Src/system_stm32f4xx.c MOTENV1/Src/sensor_service.c MOTENV1/Src/syscalls.c MOTENV1/Src/TargetPlatform.c MOTENV1/Src/drv_uart.c Drivers/BSP/X-NUCLEO-IDB04A1/stm32_bluenrg_ble.c Middlewares/ST/STM32_BlueNRG/SimpleBlueNRG_HCI/hci/hci.c Middlewares/ST/STM32_BlueNRG/SimpleBlueNRG_HCI/hci/controller/bluenrg_gap_aci.c Middlewares/ST/STM32_BlueNRG/SimpleBlueNRG_HCI/hci/controller/bluenrg_gatt_aci.c Middlewares/ST/STM32_BlueNRG/SimpleBlueNRG_HCI/hci/controller/bluenrg_hal_aci.c Middlewares/ST/STM32_BlueNRG/SimpleBlueNRG_HCI/hci/controller/bluenrg_IFR.c Middlewares/ST/STM32_BlueNRG/SimpleBlueNRG_HCI/hci/controller/bluenrg_l2cap_aci.c Middlewares/ST/STM32_BlueNRG/SimpleBlueNRG_HCI/hci/controller/bluenrg_updater_aci.c Middlewares/ST/STM32_BlueNRG/SimpleBlueNRG_HCI/hci/controller/bluenrg_utils.c Middlewares/ST/STM32_BlueNRG/SimpleBlueNRG_HCI/utils/ble_list.c Middlewares/ST/STM32_BlueNRG/SimpleBlueNRG_HCI/utils/gp_timer.c Middlewares/ST/STM32_BlueNRG/SimpleBlueNRG_HCI/utils/osal.c Drivers/BSP/STM32F4xx-Nucleo/stm32f4xx_I2C.c Drivers/BSP/STM32F4xx-Nucleo/stm32f4xx_SPI.c Drivers/BSP/X_NUCLEO_IKS01A1/x_nucleo_iks01a1_humidity.c Drivers/BSP/X_NUCLEO_IKS01A1/x_nucleo_iks01a1_temperature.c Drivers/BSP/X_NUCLEO_IKS01A1/x_nucleo_iks01a1_pressure.c Drivers/BSP/X_NUCLEO_IKS01A1/x_nucleo_iks01a1.c Drivers/BSP/X_NUCLEO_IKS01A2/x_nucleo_iks01a2_humidity.c Drivers/BSP/X_NUCLEO_IKS01A2/x_nucleo_iks01a2_temperature.c Drivers/BSP/X_NUCLEO_IKS01A2/x_nucleo_iks01a2_pressure.c Drivers/BSP/X_NUCLEO_IKS01A2/x_nucleo_iks01a2.c Drivers/BSP/Components/hts221/HTS221_Driver_HL.c Drivers/BSP/Components/hts221/HTS221_Driver.c Drivers/BSP/Components/lps22hb/LPS22HB_Driver_HL.c Drivers/BSP/Components/lps22hb/LPS22HB_Driver.c Drivers/BSP/Components/lps25hb/LPS25HB_Driver_HL.c Drivers/BSP/Components/lps25hb/LPS25HB_Driver.c -o template.elf
+MOTENV1/Src/main.c: In function 'main':
+MOTENV1/Src/main.c:92:6: warning: implicit declaration of function 'setConnectable_2' [-Wimplicit-function-declaration]
+      setConnectable_2();
+      ^
+MOTENV1/Src/main.c: In function 'SendEnvironmentalData':
+MOTENV1/Src/main.c:150:11: warning: unused variable 'Status' [-Wunused-variable]
+   uint8_t Status;
+           ^
+MOTENV1/Src/main.c: In function 'Init_BlueNRG_Stack':
+MOTENV1/Src/main.c:260:11: warning: unused variable 'SERVER_BDADDR' [-Wunused-variable]
+   uint8_t SERVER_BDADDR[] = {0xaa, 0x00, 0x00, 0xE1, 0x80, 0x02};
+           ^
+Middlewares/ST/STM32_BlueNRG/SimpleBlueNRG_HCI/hci/controller/bluenrg_gap_aci.c: In function 'aci_gap_set_limited_discoverable':
+Middlewares/ST/STM32_BlueNRG/SimpleBlueNRG_HCI/hci/controller/bluenrg_gap_aci.c:123:40: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+   if ((LocalNameLen+ServiceUUIDLen+14) > sizeof(buffer))
+                                        ^
+Middlewares/ST/STM32_BlueNRG/SimpleBlueNRG_HCI/hci/controller/bluenrg_gap_aci.c: In function 'aci_gap_set_discoverable':
+Middlewares/ST/STM32_BlueNRG/SimpleBlueNRG_HCI/hci/controller/bluenrg_gap_aci.c:186:40: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+   if ((LocalNameLen+ServiceUUIDLen+14) > sizeof(buffer))
+                                        ^
+Middlewares/ST/STM32_BlueNRG/SimpleBlueNRG_HCI/hci/controller/bluenrg_gap_aci.c: In function 'aci_gap_resolve_private_address_IDB05A1':
+Middlewares/ST/STM32_BlueNRG/SimpleBlueNRG_HCI/hci/controller/bluenrg_gap_aci.c:1175:49: warning: 'sizeof' on array function parameter 'actual_address' will return size of 'uint8_t * {aka unsigned char *}' [-Wsizeof-array-argument]
+   Osal_MemCpy(actual_address, rp.address, sizeof(actual_address));  
+                                                 ^
+Middlewares/ST/STM32_BlueNRG/SimpleBlueNRG_HCI/hci/controller/bluenrg_gap_aci.c:1153:91: note: declared here
+ tBleStatus aci_gap_resolve_private_address_IDB05A1(const tBDAddr private_address, tBDAddr actual_address)
+                                                                                           ^
+Middlewares/ST/STM32_BlueNRG/SimpleBlueNRG_HCI/hci/controller/bluenrg_hal_aci.c: In function 'aci_hal_get_link_status':
+Middlewares/ST/STM32_BlueNRG/SimpleBlueNRG_HCI/hci/controller/bluenrg_hal_aci.c:235:48: warning: 'sizeof' on array function parameter 'link_status' will return size of 'uint8_t * {aka unsigned char *}' [-Wsizeof-array-argument]
+   Osal_MemCpy(link_status,rp.link_status,sizeof(link_status));
+                                                ^
+Middlewares/ST/STM32_BlueNRG/SimpleBlueNRG_HCI/hci/controller/bluenrg_hal_aci.c:218:44: note: declared here
+ tBleStatus aci_hal_get_link_status(uint8_t link_status[8], uint16_t conn_handle[8])
+                                            ^
+Middlewares/ST/STM32_BlueNRG/SimpleBlueNRG_HCI/hci/controller/bluenrg_IFR.c:357:2: warning: #warning BLUENRG_CONFIG not valid [-Wcpp]
+ #warning BLUENRG_CONFIG not valid
+  ^
+Middlewares/ST/STM32_BlueNRG/SimpleBlueNRG_HCI/hci/controller/bluenrg_utils.c: In function 'program_device':
+Middlewares/ST/STM32_BlueNRG/SimpleBlueNRG_HCI/hci/controller/bluenrg_utils.c:102:3: warning: implicit declaration of function 'BlueNRG_HW_Bootloader' [-Wimplicit-function-declaration]
+   BlueNRG_HW_Bootloader();
+   ^
+Middlewares/ST/STM32_BlueNRG/SimpleBlueNRG_HCI/hci/controller/bluenrg_utils.c:146:20: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+       for (j=i; ((j<SECTOR_SIZE+i)&&(j<fw_size)); j += data_size) {
+                    ^
+Middlewares/ST/STM32_BlueNRG/SimpleBlueNRG_HCI/hci/controller/bluenrg_utils.c:183:3: warning: implicit declaration of function 'BlueNRG_RST' [-Wimplicit-function-declaration]
+   BlueNRG_RST();
+   ^
+/local/sdk_elec/gcc-arm-none-eabi-5_2-2015q4/bin/arm-none-eabi-objcopy -O ihex template.elf   template.hex
+/local/sdk_elec/gcc-arm-none-eabi-5_2-2015q4/bin/arm-none-eabi-objcopy -O binary template.elf template.bin
+17:44:59 **** Incremental Build of configuration Default for project stm32f411_base ****
+make all 
+make: Nothing to be done for 'all'.
+17:47:19 **** Incremental Build of configuration Default for project stm32f411_base ****
+make all 
+make: Nothing to be done for 'all'.
+17:47:28 **** Incremental Build of configuration Default for project stm32f411_base ****
+make all 
+make: Nothing to be done for 'all'.
+17:47:29 **** Incremental Build of configuration Default for project stm32f411_base ****
+make all 
+make: Nothing to be done for 'all'.
+17:50:27 **** Incremental Build of configuration Default for project stm32f411_base ****
+make all 
+make: Nothing to be done for 'all'.
+17:54:29 **** Incremental Build of configuration Default for project stm32f411_base ****
+make all 
+/local/sdk_elec/gcc-arm-none-eabi-5_2-2015q4/bin/arm-none-eabi-gcc -IMOTENV1/Inc/ -IDrivers/STM32F4xx_HAL_Driver/Inc/ -IDrivers/CMSIS/Device/ST/STM32F4xx/Include/ -IDrivers/CMSIS/Include/ -IDrivers/BSP/STM32F4xx-Nucleo/ -IDrivers/BSP/X-NUCLEO-IDB04A1 -IMiddlewares/ST/STM32_BlueNRG/SimpleBlueNRG_HCI/includes -IMiddlewares/ST/STM32_BlueNRG/Interface -IDrivers/BSP/X-NUCLEO-IDB0xA1 -IDrivers/BSP/X_NUCLEO_IKS01A1 -IDrivers/BSP/X_NUCLEO_IKS01A2 -IMiddlewares/ST/STM32_MetaDataManager -IMiddlewares/ST/STM32_MotionAR_Library/Inc -IMiddlewares/ST/STM32_MotionCP_Library/Inc -IMiddlewares/ST/STM32_MotionFX_Library/Inc -IMiddlewares/ST/STM32_MotionGR_Library/Inc -IMiddlewares/ST/STM32_MotionID_Library/Inc -IMiddlewares/ST/STM32_MotionPM_Library/Inc -IDrivers/BSP/Components/Common -IDrivers/BSP/Components/hts221 -IDrivers/BSP/Components/lis3mdl -IDrivers/BSP/Components/lps22hb -IDrivers/BSP/Components/lps25hb -IDrivers/BSP/Components/lsm303agr -IDrivers/BSP/Components/lsm6ds0 -IDrivers/BSP/Components/lsm6ds3 -IDrivers/BSP/Components/lsm6dsl -IDrivers/BSP/Components/lsm6dsm -IDrivers/BSP/Components/stc3115 -IDrivers/BSP/X_NUCLEO_IKS01A1 -IDrivers/BSP/X_NUCLEO_IKS01A2 -DSTM32F411xE -ggdb -O0 -D ARM_MATH_CM4 -L  -mlittle-endian -mthumb -mcpu=cortex-m4 -mthumb-interwork -Wl,--gc-sections -mfpu=fpv4-sp-d16 -mfloat-abi=hard -fsingle-precision-constant -Wall -Wextra -Warray-bounds -Wno-unused-parameter -TDevice/gcc.ld -mfloat-abi=hard -lc -lgcc -lgcov -lm -Wl,-Map=template.elf.map Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal.c Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc.c Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_gpio.c Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.c Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pcd.c Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pcd_ex.c Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_uart.c Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_usart.c Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_spi.c Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.c Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma_ex.c Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_adc.c Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_adc_ex.c Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim.c Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim_ex.c Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_crc.c Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_i2c.c Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash.c Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ex.c MOTENV1/Src/main.c Drivers/CMSIS/Device/ST/STM32F4xx/Source/Templates/gcc/startup_stm32f411xe.s Drivers/BSP/STM32F4xx-Nucleo/stm32f4xx_nucleo.c MOTENV1/Src/stm32f4xx_hal_msp.c MOTENV1/Src/stm32f4xx_it.c MOTENV1/Src/system_stm32f4xx.c MOTENV1/Src/sensor_service.c MOTENV1/Src/syscalls.c MOTENV1/Src/TargetPlatform.c MOTENV1/Src/drv_uart.c Drivers/BSP/X-NUCLEO-IDB04A1/stm32_bluenrg_ble.c Middlewares/ST/STM32_BlueNRG/SimpleBlueNRG_HCI/hci/hci.c Middlewares/ST/STM32_BlueNRG/SimpleBlueNRG_HCI/hci/controller/bluenrg_gap_aci.c Middlewares/ST/STM32_BlueNRG/SimpleBlueNRG_HCI/hci/controller/bluenrg_gatt_aci.c Middlewares/ST/STM32_BlueNRG/SimpleBlueNRG_HCI/hci/controller/bluenrg_hal_aci.c Middlewares/ST/STM32_BlueNRG/SimpleBlueNRG_HCI/hci/controller/bluenrg_IFR.c Middlewares/ST/STM32_BlueNRG/SimpleBlueNRG_HCI/hci/controller/bluenrg_l2cap_aci.c Middlewares/ST/STM32_BlueNRG/SimpleBlueNRG_HCI/hci/controller/bluenrg_updater_aci.c Middlewares/ST/STM32_BlueNRG/SimpleBlueNRG_HCI/hci/controller/bluenrg_utils.c Middlewares/ST/STM32_BlueNRG/SimpleBlueNRG_HCI/utils/ble_list.c Middlewares/ST/STM32_BlueNRG/SimpleBlueNRG_HCI/utils/gp_timer.c Middlewares/ST/STM32_BlueNRG/SimpleBlueNRG_HCI/utils/osal.c Drivers/BSP/STM32F4xx-Nucleo/stm32f4xx_I2C.c Drivers/BSP/STM32F4xx-Nucleo/stm32f4xx_SPI.c Drivers/BSP/X_NUCLEO_IKS01A1/x_nucleo_iks01a1_humidity.c Drivers/BSP/X_NUCLEO_IKS01A1/x_nucleo_iks01a1_temperature.c Drivers/BSP/X_NUCLEO_IKS01A1/x_nucleo_iks01a1_pressure.c Drivers/BSP/X_NUCLEO_IKS01A1/x_nucleo_iks01a1.c Drivers/BSP/X_NUCLEO_IKS01A2/x_nucleo_iks01a2_humidity.c Drivers/BSP/X_NUCLEO_IKS01A2/x_nucleo_iks01a2_temperature.c Drivers/BSP/X_NUCLEO_IKS01A2/x_nucleo_iks01a2_pressure.c Drivers/BSP/X_NUCLEO_IKS01A2/x_nucleo_iks01a2.c Drivers/BSP/Components/hts221/HTS221_Driver_HL.c Drivers/BSP/Components/hts221/HTS221_Driver.c Drivers/BSP/Components/lps22hb/LPS22HB_Driver_HL.c Drivers/BSP/Components/lps22hb/LPS22HB_Driver.c Drivers/BSP/Components/lps25hb/LPS25HB_Driver_HL.c Drivers/BSP/Components/lps25hb/LPS25HB_Driver.c -o template.elf
+MOTENV1/Src/main.c: In function 'main':
+MOTENV1/Src/main.c:92:6: warning: implicit declaration of function 'setConnectable_2' [-Wimplicit-function-declaration]
+      setConnectable_2();
+      ^
+MOTENV1/Src/main.c: In function 'SendEnvironmentalData':
+MOTENV1/Src/main.c:150:11: warning: unused variable 'Status' [-Wunused-variable]
+   uint8_t Status;
+           ^
+MOTENV1/Src/main.c: In function 'Init_BlueNRG_Stack':
+MOTENV1/Src/main.c:260:11: warning: unused variable 'SERVER_BDADDR' [-Wunused-variable]
+   uint8_t SERVER_BDADDR[] = {0xaa, 0x00, 0x00, 0xE1, 0x80, 0x02};
+           ^
+Middlewares/ST/STM32_BlueNRG/SimpleBlueNRG_HCI/hci/controller/bluenrg_gap_aci.c: In function 'aci_gap_set_limited_discoverable':
+Middlewares/ST/STM32_BlueNRG/SimpleBlueNRG_HCI/hci/controller/bluenrg_gap_aci.c:123:40: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+   if ((LocalNameLen+ServiceUUIDLen+14) > sizeof(buffer))
+                                        ^
+Middlewares/ST/STM32_BlueNRG/SimpleBlueNRG_HCI/hci/controller/bluenrg_gap_aci.c: In function 'aci_gap_set_discoverable':
+Middlewares/ST/STM32_BlueNRG/SimpleBlueNRG_HCI/hci/controller/bluenrg_gap_aci.c:186:40: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+   if ((LocalNameLen+ServiceUUIDLen+14) > sizeof(buffer))
+                                        ^
+Middlewares/ST/STM32_BlueNRG/SimpleBlueNRG_HCI/hci/controller/bluenrg_gap_aci.c: In function 'aci_gap_resolve_private_address_IDB05A1':
+Middlewares/ST/STM32_BlueNRG/SimpleBlueNRG_HCI/hci/controller/bluenrg_gap_aci.c:1175:49: warning: 'sizeof' on array function parameter 'actual_address' will return size of 'uint8_t * {aka unsigned char *}' [-Wsizeof-array-argument]
+   Osal_MemCpy(actual_address, rp.address, sizeof(actual_address));  
+                                                 ^
+Middlewares/ST/STM32_BlueNRG/SimpleBlueNRG_HCI/hci/controller/bluenrg_gap_aci.c:1153:91: note: declared here
+ tBleStatus aci_gap_resolve_private_address_IDB05A1(const tBDAddr private_address, tBDAddr actual_address)
+                                                                                           ^
+Middlewares/ST/STM32_BlueNRG/SimpleBlueNRG_HCI/hci/controller/bluenrg_hal_aci.c: In function 'aci_hal_get_link_status':
+Middlewares/ST/STM32_BlueNRG/SimpleBlueNRG_HCI/hci/controller/bluenrg_hal_aci.c:235:48: warning: 'sizeof' on array function parameter 'link_status' will return size of 'uint8_t * {aka unsigned char *}' [-Wsizeof-array-argument]
+   Osal_MemCpy(link_status,rp.link_status,sizeof(link_status));
+                                                ^
+Middlewares/ST/STM32_BlueNRG/SimpleBlueNRG_HCI/hci/controller/bluenrg_hal_aci.c:218:44: note: declared here
+ tBleStatus aci_hal_get_link_status(uint8_t link_status[8], uint16_t conn_handle[8])
+                                            ^
+Middlewares/ST/STM32_BlueNRG/SimpleBlueNRG_HCI/hci/controller/bluenrg_IFR.c:357:2: warning: #warning BLUENRG_CONFIG not valid [-Wcpp]
+ #warning BLUENRG_CONFIG not valid
+  ^
+Middlewares/ST/STM32_BlueNRG/SimpleBlueNRG_HCI/hci/controller/bluenrg_utils.c: In function 'program_device':
+Middlewares/ST/STM32_BlueNRG/SimpleBlueNRG_HCI/hci/controller/bluenrg_utils.c:102:3: warning: implicit declaration of function 'BlueNRG_HW_Bootloader' [-Wimplicit-function-declaration]
+   BlueNRG_HW_Bootloader();
+   ^
+Middlewares/ST/STM32_BlueNRG/SimpleBlueNRG_HCI/hci/controller/bluenrg_utils.c:146:20: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+       for (j=i; ((j<SECTOR_SIZE+i)&&(j<fw_size)); j += data_size) {
+                    ^
+Middlewares/ST/STM32_BlueNRG/SimpleBlueNRG_HCI/hci/controller/bluenrg_utils.c:183:3: warning: implicit declaration of function 'BlueNRG_RST' [-Wimplicit-function-declaration]
+   BlueNRG_RST();
+   ^
+/local/sdk_elec/gcc-arm-none-eabi-5_2-2015q4/bin/arm-none-eabi-objcopy -O ihex template.elf   template.hex
+/local/sdk_elec/gcc-arm-none-eabi-5_2-2015q4/bin/arm-none-eabi-objcopy -O binary template.elf template.bin
+17:54:42 **** Incremental Build of configuration Default for project stm32f411_base ****
+make all 
+make: Nothing to be done for 'all'.
+17:55:11 **** Incremental Build of configuration Default for project stm32f411_base ****
+make all 
+make: Nothing to be done for 'all'.
+17:56:18 **** Incremental Build of configuration Default for project stm32f411_base ****
+make all 
+make: Nothing to be done for 'all'.
+17:57:38 **** Incremental Build of configuration Default for project stm32f411_base ****
+make all 
+make: Nothing to be done for 'all'.
+13:44:49 **** Build of configuration Default for project stm32f411_base ****
+make all 
+/local/sdk_elec/gcc-arm-none-eabi-5_2-2015q4/bin/arm-none-eabi-gcc -IInc/ -IDrivers/STM32F4xx_HAL_Driver/Inc/ -IDrivers/CMSIS/Device/ST/STM32F4xx/Include/ -IDrivers/CMSIS/Include/ -IDrivers/BSP/STM32F4xx-Nucleo/ -IDrivers/BSP/X-NUCLEO-IDB04A1 -IMiddlewares/ST/STM32_BlueNRG/SimpleBlueNRG_HCI/includes -IMiddlewares/ST/STM32_BlueNRG/Interface -IDrivers/BSP/X-NUCLEO-IDB0xA1 -IDrivers/BSP/X_NUCLEO_IKS01A1 -IDrivers/BSP/X_NUCLEO_IKS01A2 -IMiddlewares/ST/STM32_MetaDataManager -IMiddlewares/ST/STM32_MotionAR_Library/Inc -IMiddlewares/ST/STM32_MotionCP_Library/Inc -IMiddlewares/ST/STM32_MotionFX_Library/Inc -IMiddlewares/ST/STM32_MotionGR_Library/Inc -IMiddlewares/ST/STM32_MotionID_Library/Inc -IMiddlewares/ST/STM32_MotionPM_Library/Inc -IDrivers/BSP/Components/Common -IDrivers/BSP/Components/hts221 -IDrivers/BSP/Components/lis3mdl -IDrivers/BSP/Components/lps22hb -IDrivers/BSP/Components/lps25hb -IDrivers/BSP/Components/lsm303agr -IDrivers/BSP/Components/lsm6ds0 -IDrivers/BSP/Components/lsm6ds3 -IDrivers/BSP/Components/lsm6dsl -IDrivers/BSP/Components/lsm6dsm -IDrivers/BSP/Components/stc3115 -IDrivers/BSP/X_NUCLEO_IKS01A1 -IDrivers/BSP/X_NUCLEO_IKS01A2 -DSTM32F411xE -ggdb -O0 -D ARM_MATH_CM4 -L  -mlittle-endian -mthumb -mcpu=cortex-m4 -mthumb-interwork -Wl,--gc-sections -mfpu=fpv4-sp-d16 -mfloat-abi=hard -fsingle-precision-constant -Wall -Wextra -Warray-bounds -Wno-unused-parameter -TDevice/gcc.ld -mfloat-abi=hard -lc -lgcc -lgcov -lm -Wl,-Map=template.elf.map Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal.c Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc.c Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_gpio.c Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.c Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pcd.c Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pcd_ex.c Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_uart.c Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_usart.c Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_spi.c Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.c Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma_ex.c Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_adc.c Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_adc_ex.c Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim.c Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim_ex.c Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_crc.c Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_i2c.c Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash.c Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ex.c Src/main.c Drivers/CMSIS/Device/ST/STM32F4xx/Source/Templates/gcc/startup_stm32f411xe.s Drivers/BSP/STM32F4xx-Nucleo/stm32f4xx_nucleo.c Src/stm32f4xx_hal_msp.c Src/stm32f4xx_it.c Src/system_stm32f4xx.c Src/sensor_service.c Src/syscalls.c Src/TargetPlatform.c Src/drv_uart.c Drivers/BSP/X-NUCLEO-IDB04A1/stm32_bluenrg_ble.c Middlewares/ST/STM32_BlueNRG/SimpleBlueNRG_HCI/hci/hci.c Middlewares/ST/STM32_BlueNRG/SimpleBlueNRG_HCI/hci/controller/bluenrg_gap_aci.c Middlewares/ST/STM32_BlueNRG/SimpleBlueNRG_HCI/hci/controller/bluenrg_gatt_aci.c Middlewares/ST/STM32_BlueNRG/SimpleBlueNRG_HCI/hci/controller/bluenrg_hal_aci.c Middlewares/ST/STM32_BlueNRG/SimpleBlueNRG_HCI/hci/controller/bluenrg_IFR.c Middlewares/ST/STM32_BlueNRG/SimpleBlueNRG_HCI/hci/controller/bluenrg_l2cap_aci.c Middlewares/ST/STM32_BlueNRG/SimpleBlueNRG_HCI/hci/controller/bluenrg_updater_aci.c Middlewares/ST/STM32_BlueNRG/SimpleBlueNRG_HCI/hci/controller/bluenrg_utils.c Middlewares/ST/STM32_BlueNRG/SimpleBlueNRG_HCI/utils/ble_list.c Middlewares/ST/STM32_BlueNRG/SimpleBlueNRG_HCI/utils/gp_timer.c Middlewares/ST/STM32_BlueNRG/SimpleBlueNRG_HCI/utils/osal.c Drivers/BSP/STM32F4xx-Nucleo/stm32f4xx_I2C.c Drivers/BSP/STM32F4xx-Nucleo/stm32f4xx_SPI.c Drivers/BSP/X_NUCLEO_IKS01A1/x_nucleo_iks01a1_humidity.c Drivers/BSP/X_NUCLEO_IKS01A1/x_nucleo_iks01a1_temperature.c Drivers/BSP/X_NUCLEO_IKS01A1/x_nucleo_iks01a1_pressure.c Drivers/BSP/X_NUCLEO_IKS01A1/x_nucleo_iks01a1.c Drivers/BSP/X_NUCLEO_IKS01A2/x_nucleo_iks01a2_humidity.c Drivers/BSP/X_NUCLEO_IKS01A2/x_nucleo_iks01a2_temperature.c Drivers/BSP/X_NUCLEO_IKS01A2/x_nucleo_iks01a2_pressure.c Drivers/BSP/X_NUCLEO_IKS01A2/x_nucleo_iks01a2.c Drivers/BSP/Components/hts221/HTS221_Driver_HL.c Drivers/BSP/Components/hts221/HTS221_Driver.c Drivers/BSP/Components/lps22hb/LPS22HB_Driver_HL.c Drivers/BSP/Components/lps22hb/LPS22HB_Driver.c Drivers/BSP/Components/lps25hb/LPS25HB_Driver_HL.c Drivers/BSP/Components/lps25hb/LPS25HB_Driver.c -o template.elf
+Src/main.c: In function 'SendEnvironmentalData':
+Src/main.c:150:11: warning: unused variable 'Status' [-Wunused-variable]
+   uint8_t Status;
+           ^
+Src/sensor_service.c: In function 'Environmental_Update':
+Src/sensor_service.c:146:11: warning: variable 'buff_Tick' set but not used [-Wunused-but-set-variable]
+   uint8_t buff_Tick[2];
+           ^
+Src/sensor_service.c: At top level:
+Src/sensor_service.c:34:17: warning: 'PressionCharHandle' defined but not used [-Wunused-variable]
+ static uint16_t PressionCharHandle;
+                 ^
+Middlewares/ST/STM32_BlueNRG/SimpleBlueNRG_HCI/hci/controller/bluenrg_gap_aci.c: In function 'aci_gap_set_limited_discoverable':
+Middlewares/ST/STM32_BlueNRG/SimpleBlueNRG_HCI/hci/controller/bluenrg_gap_aci.c:123:40: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+   if ((LocalNameLen+ServiceUUIDLen+14) > sizeof(buffer))
+                                        ^
+Middlewares/ST/STM32_BlueNRG/SimpleBlueNRG_HCI/hci/controller/bluenrg_gap_aci.c: In function 'aci_gap_set_discoverable':
+Middlewares/ST/STM32_BlueNRG/SimpleBlueNRG_HCI/hci/controller/bluenrg_gap_aci.c:186:40: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+   if ((LocalNameLen+ServiceUUIDLen+14) > sizeof(buffer))
+                                        ^
+Middlewares/ST/STM32_BlueNRG/SimpleBlueNRG_HCI/hci/controller/bluenrg_gap_aci.c: In function 'aci_gap_resolve_private_address_IDB05A1':
+Middlewares/ST/STM32_BlueNRG/SimpleBlueNRG_HCI/hci/controller/bluenrg_gap_aci.c:1175:49: warning: 'sizeof' on array function parameter 'actual_address' will return size of 'uint8_t * {aka unsigned char *}' [-Wsizeof-array-argument]
+   Osal_MemCpy(actual_address, rp.address, sizeof(actual_address));  
+                                                 ^
+Middlewares/ST/STM32_BlueNRG/SimpleBlueNRG_HCI/hci/controller/bluenrg_gap_aci.c:1153:91: note: declared here
+ tBleStatus aci_gap_resolve_private_address_IDB05A1(const tBDAddr private_address, tBDAddr actual_address)
+                                                                                           ^
+Middlewares/ST/STM32_BlueNRG/SimpleBlueNRG_HCI/hci/controller/bluenrg_hal_aci.c: In function 'aci_hal_get_link_status':
+Middlewares/ST/STM32_BlueNRG/SimpleBlueNRG_HCI/hci/controller/bluenrg_hal_aci.c:235:48: warning: 'sizeof' on array function parameter 'link_status' will return size of 'uint8_t * {aka unsigned char *}' [-Wsizeof-array-argument]
+   Osal_MemCpy(link_status,rp.link_status,sizeof(link_status));
+                                                ^
+Middlewares/ST/STM32_BlueNRG/SimpleBlueNRG_HCI/hci/controller/bluenrg_hal_aci.c:218:44: note: declared here
+ tBleStatus aci_hal_get_link_status(uint8_t link_status[8], uint16_t conn_handle[8])
+                                            ^
+Middlewares/ST/STM32_BlueNRG/SimpleBlueNRG_HCI/hci/controller/bluenrg_IFR.c:357:2: warning: #warning BLUENRG_CONFIG not valid [-Wcpp]
+ #warning BLUENRG_CONFIG not valid
+  ^
+Middlewares/ST/STM32_BlueNRG/SimpleBlueNRG_HCI/hci/controller/bluenrg_utils.c: In function 'program_device':
+Middlewares/ST/STM32_BlueNRG/SimpleBlueNRG_HCI/hci/controller/bluenrg_utils.c:102:3: warning: implicit declaration of function 'BlueNRG_HW_Bootloader' [-Wimplicit-function-declaration]
+   BlueNRG_HW_Bootloader();
+   ^
+Middlewares/ST/STM32_BlueNRG/SimpleBlueNRG_HCI/hci/controller/bluenrg_utils.c:146:20: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+       for (j=i; ((j<SECTOR_SIZE+i)&&(j<fw_size)); j += data_size) {
+                    ^
+Middlewares/ST/STM32_BlueNRG/SimpleBlueNRG_HCI/hci/controller/bluenrg_utils.c:183:3: warning: implicit declaration of function 'BlueNRG_RST' [-Wimplicit-function-declaration]
+   BlueNRG_RST();
+   ^
+/local/sdk_elec/gcc-arm-none-eabi-5_2-2015q4/bin/arm-none-eabi-objcopy -O ihex template.elf   template.hex
+/local/sdk_elec/gcc-arm-none-eabi-5_2-2015q4/bin/arm-none-eabi-objcopy -O binary template.elf template.bin
+13:50:51 **** Incremental Build of configuration Default for project stm32f411_base ****
+make all 
+/local/sdk_elec/gcc-arm-none-eabi-5_2-2015q4/bin/arm-none-eabi-gcc -IInc/ -IDrivers/STM32F4xx_HAL_Driver/Inc/ -IDrivers/CMSIS/Device/ST/STM32F4xx/Include/ -IDrivers/CMSIS/Include/ -IDrivers/BSP/STM32F4xx-Nucleo/ -IDrivers/BSP/X-NUCLEO-IDB04A1 -IMiddlewares/ST/STM32_BlueNRG/SimpleBlueNRG_HCI/includes -IMiddlewares/ST/STM32_BlueNRG/Interface -IDrivers/BSP/X-NUCLEO-IDB0xA1 -IDrivers/BSP/X_NUCLEO_IKS01A1 -IDrivers/BSP/X_NUCLEO_IKS01A2 -IMiddlewares/ST/STM32_MetaDataManager -IMiddlewares/ST/STM32_MotionAR_Library/Inc -IMiddlewares/ST/STM32_MotionCP_Library/Inc -IMiddlewares/ST/STM32_MotionFX_Library/Inc -IMiddlewares/ST/STM32_MotionGR_Library/Inc -IMiddlewares/ST/STM32_MotionID_Library/Inc -IMiddlewares/ST/STM32_MotionPM_Library/Inc -IDrivers/BSP/Components/Common -IDrivers/BSP/Components/hts221 -IDrivers/BSP/Components/lis3mdl -IDrivers/BSP/Components/lps22hb -IDrivers/BSP/Components/lps25hb -IDrivers/BSP/Components/lsm303agr -IDrivers/BSP/Components/lsm6ds0 -IDrivers/BSP/Components/lsm6ds3 -IDrivers/BSP/Components/lsm6dsl -IDrivers/BSP/Components/lsm6dsm -IDrivers/BSP/Components/stc3115 -IDrivers/BSP/X_NUCLEO_IKS01A1 -IDrivers/BSP/X_NUCLEO_IKS01A2 -DSTM32F411xE -ggdb -O0 -D ARM_MATH_CM4 -L  -mlittle-endian -mthumb -mcpu=cortex-m4 -mthumb-interwork -Wl,--gc-sections -mfpu=fpv4-sp-d16 -mfloat-abi=hard -fsingle-precision-constant -Wall -Wextra -Warray-bounds -Wno-unused-parameter -TDevice/gcc.ld -mfloat-abi=hard -lc -lgcc -lgcov -lm -Wl,-Map=template.elf.map Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal.c Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc.c Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_gpio.c Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.c Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pcd.c Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pcd_ex.c Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_uart.c Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_usart.c Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_spi.c Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.c Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma_ex.c Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_adc.c Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_adc_ex.c Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim.c Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim_ex.c Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_crc.c Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_i2c.c Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash.c Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ex.c Src/main.c Drivers/CMSIS/Device/ST/STM32F4xx/Source/Templates/gcc/startup_stm32f411xe.s Drivers/BSP/STM32F4xx-Nucleo/stm32f4xx_nucleo.c Src/stm32f4xx_hal_msp.c Src/stm32f4xx_it.c Src/system_stm32f4xx.c Src/sensor_service.c Src/syscalls.c Src/TargetPlatform.c Src/drv_uart.c Drivers/BSP/X-NUCLEO-IDB04A1/stm32_bluenrg_ble.c Middlewares/ST/STM32_BlueNRG/SimpleBlueNRG_HCI/hci/hci.c Middlewares/ST/STM32_BlueNRG/SimpleBlueNRG_HCI/hci/controller/bluenrg_gap_aci.c Middlewares/ST/STM32_BlueNRG/SimpleBlueNRG_HCI/hci/controller/bluenrg_gatt_aci.c Middlewares/ST/STM32_BlueNRG/SimpleBlueNRG_HCI/hci/controller/bluenrg_hal_aci.c Middlewares/ST/STM32_BlueNRG/SimpleBlueNRG_HCI/hci/controller/bluenrg_IFR.c Middlewares/ST/STM32_BlueNRG/SimpleBlueNRG_HCI/hci/controller/bluenrg_l2cap_aci.c Middlewares/ST/STM32_BlueNRG/SimpleBlueNRG_HCI/hci/controller/bluenrg_updater_aci.c Middlewares/ST/STM32_BlueNRG/SimpleBlueNRG_HCI/hci/controller/bluenrg_utils.c Middlewares/ST/STM32_BlueNRG/SimpleBlueNRG_HCI/utils/ble_list.c Middlewares/ST/STM32_BlueNRG/SimpleBlueNRG_HCI/utils/gp_timer.c Middlewares/ST/STM32_BlueNRG/SimpleBlueNRG_HCI/utils/osal.c Drivers/BSP/STM32F4xx-Nucleo/stm32f4xx_I2C.c Drivers/BSP/STM32F4xx-Nucleo/stm32f4xx_SPI.c Drivers/BSP/X_NUCLEO_IKS01A1/x_nucleo_iks01a1_humidity.c Drivers/BSP/X_NUCLEO_IKS01A1/x_nucleo_iks01a1_temperature.c Drivers/BSP/X_NUCLEO_IKS01A1/x_nucleo_iks01a1_pressure.c Drivers/BSP/X_NUCLEO_IKS01A1/x_nucleo_iks01a1.c Drivers/BSP/X_NUCLEO_IKS01A2/x_nucleo_iks01a2_humidity.c Drivers/BSP/X_NUCLEO_IKS01A2/x_nucleo_iks01a2_temperature.c Drivers/BSP/X_NUCLEO_IKS01A2/x_nucleo_iks01a2_pressure.c Drivers/BSP/X_NUCLEO_IKS01A2/x_nucleo_iks01a2.c Drivers/BSP/Components/hts221/HTS221_Driver_HL.c Drivers/BSP/Components/hts221/HTS221_Driver.c Drivers/BSP/Components/lps22hb/LPS22HB_Driver_HL.c Drivers/BSP/Components/lps22hb/LPS22HB_Driver.c Drivers/BSP/Components/lps25hb/LPS25HB_Driver_HL.c Drivers/BSP/Components/lps25hb/LPS25HB_Driver.c -o template.elf
+Src/main.c: In function 'SendEnvironmentalData':
+Src/main.c:150:11: warning: unused variable 'Status' [-Wunused-variable]
+   uint8_t Status;
+           ^
+Src/sensor_service.c: In function 'Environmental_Update':
+Src/sensor_service.c:146:11: warning: variable 'buff_Tick' set but not used [-Wunused-but-set-variable]
+   uint8_t buff_Tick[2];
+           ^
+Src/sensor_service.c: At top level:
+Src/sensor_service.c:34:17: warning: 'PressionCharHandle' defined but not used [-Wunused-variable]
+ static uint16_t PressionCharHandle;
+                 ^
+Middlewares/ST/STM32_BlueNRG/SimpleBlueNRG_HCI/hci/controller/bluenrg_gap_aci.c: In function 'aci_gap_set_limited_discoverable':
+Middlewares/ST/STM32_BlueNRG/SimpleBlueNRG_HCI/hci/controller/bluenrg_gap_aci.c:123:40: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+   if ((LocalNameLen+ServiceUUIDLen+14) > sizeof(buffer))
+                                        ^
+Middlewares/ST/STM32_BlueNRG/SimpleBlueNRG_HCI/hci/controller/bluenrg_gap_aci.c: In function 'aci_gap_set_discoverable':
+Middlewares/ST/STM32_BlueNRG/SimpleBlueNRG_HCI/hci/controller/bluenrg_gap_aci.c:186:40: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+   if ((LocalNameLen+ServiceUUIDLen+14) > sizeof(buffer))
+                                        ^
+Middlewares/ST/STM32_BlueNRG/SimpleBlueNRG_HCI/hci/controller/bluenrg_gap_aci.c: In function 'aci_gap_resolve_private_address_IDB05A1':
+Middlewares/ST/STM32_BlueNRG/SimpleBlueNRG_HCI/hci/controller/bluenrg_gap_aci.c:1175:49: warning: 'sizeof' on array function parameter 'actual_address' will return size of 'uint8_t * {aka unsigned char *}' [-Wsizeof-array-argument]
+   Osal_MemCpy(actual_address, rp.address, sizeof(actual_address));  
+                                                 ^
+Middlewares/ST/STM32_BlueNRG/SimpleBlueNRG_HCI/hci/controller/bluenrg_gap_aci.c:1153:91: note: declared here
+ tBleStatus aci_gap_resolve_private_address_IDB05A1(const tBDAddr private_address, tBDAddr actual_address)
+                                                                                           ^
+Middlewares/ST/STM32_BlueNRG/SimpleBlueNRG_HCI/hci/controller/bluenrg_hal_aci.c: In function 'aci_hal_get_link_status':
+Middlewares/ST/STM32_BlueNRG/SimpleBlueNRG_HCI/hci/controller/bluenrg_hal_aci.c:235:48: warning: 'sizeof' on array function parameter 'link_status' will return size of 'uint8_t * {aka unsigned char *}' [-Wsizeof-array-argument]
+   Osal_MemCpy(link_status,rp.link_status,sizeof(link_status));
+                                                ^
+Middlewares/ST/STM32_BlueNRG/SimpleBlueNRG_HCI/hci/controller/bluenrg_hal_aci.c:218:44: note: declared here
+ tBleStatus aci_hal_get_link_status(uint8_t link_status[8], uint16_t conn_handle[8])
+                                            ^
+Middlewares/ST/STM32_BlueNRG/SimpleBlueNRG_HCI/hci/controller/bluenrg_IFR.c:357:2: warning: #warning BLUENRG_CONFIG not valid [-Wcpp]
+ #warning BLUENRG_CONFIG not valid
+  ^
+Middlewares/ST/STM32_BlueNRG/SimpleBlueNRG_HCI/hci/controller/bluenrg_utils.c: In function 'program_device':
+Middlewares/ST/STM32_BlueNRG/SimpleBlueNRG_HCI/hci/controller/bluenrg_utils.c:102:3: warning: implicit declaration of function 'BlueNRG_HW_Bootloader' [-Wimplicit-function-declaration]
+   BlueNRG_HW_Bootloader();
+   ^
+Middlewares/ST/STM32_BlueNRG/SimpleBlueNRG_HCI/hci/controller/bluenrg_utils.c:146:20: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+       for (j=i; ((j<SECTOR_SIZE+i)&&(j<fw_size)); j += data_size) {
+                    ^
+Middlewares/ST/STM32_BlueNRG/SimpleBlueNRG_HCI/hci/controller/bluenrg_utils.c:183:3: warning: implicit declaration of function 'BlueNRG_RST' [-Wimplicit-function-declaration]
+   BlueNRG_RST();
+   ^
+/local/sdk_elec/gcc-arm-none-eabi-5_2-2015q4/bin/arm-none-eabi-objcopy -O ihex template.elf   template.hex
+/local/sdk_elec/gcc-arm-none-eabi-5_2-2015q4/bin/arm-none-eabi-objcopy -O binary template.elf template.bin
+13:51:14 **** Incremental Build of configuration Default for project stm32f411_base ****
 make all 
 make: Nothing to be done for 'all'.
